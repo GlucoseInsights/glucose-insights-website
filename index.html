@@ -1301,25 +1301,45 @@ window.addEventListener('scroll', () => {
       card.addEventListener('mouseleave', function() { hoverIndex = -1; if (currentIndex >= 0) setActiveVideo(currentIndex); });
     });
   }
-  function update() {
-    var rect = section.getBoundingClientRect();
-    var windowH = window.innerHeight;
-    var progress = (windowH - rect.top) / (windowH + rect.height);
-    progress = Math.max(0, Math.min(1, progress));
-    var index = Math.floor(progress * 4.5) - 1;
-    index = Math.max(-1, Math.min(3, index));
-    if (index !== currentIndex) {
-      currentIndex = index;
-      cards.forEach(function(card, i) {
-        card.classList.remove('in-view', 'seen');
-        if (i === index) card.classList.add('in-view');
-        else if (i < index) card.classList.add('seen');
+  var isMobile = window.matchMedia('(max-width: 768px)').matches;
+  if (isMobile) {
+    /* Mobile: highlight each card when it enters the viewport */
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        var i = cards.indexOf(entry.target);
+        if (entry.isIntersecting) {
+          currentIndex = i;
+          cards.forEach(function(card, j) {
+            card.classList.remove('in-view', 'seen');
+            if (j === i) card.classList.add('in-view');
+            else if (j < i) card.classList.add('seen');
+          });
+        }
       });
-      if (hoverIndex === -1 && index >= 0) setActiveVideo(index);
+    }, { threshold: 0.5 });
+    cards.forEach(function(card) { observer.observe(card); });
+  } else {
+    /* Desktop: section-progress based highlighting */
+    function update() {
+      var rect = section.getBoundingClientRect();
+      var windowH = window.innerHeight;
+      var progress = (windowH - rect.top) / (windowH + rect.height);
+      progress = Math.max(0, Math.min(1, progress));
+      var index = Math.floor(progress * 4.5) - 1;
+      index = Math.max(-1, Math.min(3, index));
+      if (index !== currentIndex) {
+        currentIndex = index;
+        cards.forEach(function(card, i) {
+          card.classList.remove('in-view', 'seen');
+          if (i === index) card.classList.add('in-view');
+          else if (i < index) card.classList.add('seen');
+        });
+        if (hoverIndex === -1 && index >= 0) setActiveVideo(index);
+      }
     }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
   }
-  window.addEventListener('scroll', update, { passive: true });
-  update();
 })();
 
 (function() {

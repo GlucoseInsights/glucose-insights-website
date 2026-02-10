@@ -286,20 +286,8 @@ nav .container {
     0 0 0 1px rgba(0,0,0,0.5);
 }
 
-/* Dynamic Island */
-.phone-mockup::before {
-  content: '';
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 26px;
-  background: #000;
-  border-radius: 20px;
-  z-index: 10;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.04), inset 0 1px 2px rgba(0,0,0,0.8);
-}
+/* Dynamic Island - hidden, use the one from screen recordings */
+.phone-mockup::before { display: none; }
 
 /* Side button (power) */
 .phone-mockup::after {
@@ -1318,7 +1306,7 @@ window.addEventListener('scroll', () => {
     var windowH = window.innerHeight;
     var progress = (windowH - rect.top) / (windowH + rect.height);
     progress = Math.max(0, Math.min(1, progress));
-    var index = Math.floor(progress * 5.5) - 1;
+    var index = Math.floor(progress * 4.5) - 1;
     index = Math.max(-1, Math.min(3, index));
     if (index !== currentIndex) {
       currentIndex = index;

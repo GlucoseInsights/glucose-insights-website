@@ -52,7 +52,7 @@
       .then(function () {
         emailInput.value = '';
         submitBtn.textContent = 'Subscribed!';
-        submitBtn.style.background = 'var(--accent-dim, #2ab86b)';
+        submitBtn.style.background = 'var(--accent-dim, #5cc4a0)';
         setTimeout(function () {
           submitBtn.textContent = originalText;
           submitBtn.style.background = '';

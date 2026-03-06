@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Disallow: /log-in.html
+Disallow: /sign-up.html
+Disallow: /reset-password.html
+Disallow: /update-password.html
+Disallow: /user-account.html
+Disallow: /access-denied.html
+Disallow: /401.html
+Disallow: /style-guide.html
+Disallow: /wireframe-v2.html
+Disallow: /wireframe-blog.html
+Disallow: /wireframe-blog-article.html
+Disallow: /wireframe-legal.html
+
+Sitemap: https://glucoseinsights.com/sitemap.xml

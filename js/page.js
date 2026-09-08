@@ -12,6 +12,23 @@
     var heroCopy = heroAct.querySelector('.hero__copy'); if (heroCopy) heroCopy.setAttribute('data-sc-cue', '0 0.9 0 0.85');
   }
 
+  /* ---- device readout, only with ?scdebug in the URL: y, hero p, copy opacity,
+     scroll events per second. For checking a real phone; never on by default. */
+  if (/[?&]scdebug/.test(location.search)) {
+    var box = document.createElement('pre');
+    box.style.cssText = 'position:fixed;left:8px;top:72px;z-index:9999;margin:0;padding:6px 8px;background:rgba(0,0,0,.75);color:#5BE0A9;font:12px/1.4 ui-monospace,Menlo,monospace;border-radius:6px;pointer-events:none;white-space:pre';
+    document.body.appendChild(box);
+    var evts = 0, lastT = performance.now(), rate = 0;
+    addEventListener('scroll', function () { evts++; }, { passive: true });
+    (function dbg() {
+      var now = performance.now();
+      if (now - lastT > 1000) { rate = evts; evts = 0; lastT = now; }
+      var hc = document.querySelector('.hero__copy'), hero = document.querySelector('.hero');
+      box.textContent = 'y ' + Math.round(scrollY) + '  vh ' + innerHeight + '\np ' + (getComputedStyle(hero).getPropertyValue('--sc-p') || '?').trim().slice(0, 5) + '  op ' + (hc ? getComputedStyle(hc).opacity.slice(0, 5) : '?') + '\nscroll/s ' + rate + '  ' + (navigator.userAgent.match(/OS \d+_\d+/) || [''])[0];
+      requestAnimationFrame(dbg);
+    })();
+  }
+
   /* ------------------------------------------ rotating noun in the pain act */
   var rot = document.querySelector('[data-rot]');
   if (rot && !reduce) {

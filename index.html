@@ -283,7 +283,7 @@
     .walk__copy h2 { font-size: clamp(1.6rem, 1.2rem + 2vw, 2.2rem); margin: 0; max-width: 20ch; order: 1; }
     .walk__step { display: none; }
     .walk__scene { order: 2; height: auto; padding: 0; }
-    .walk__phone { width: min(62vw, 44svh * 760 / 1648); }
+    .walk__phone { width: min(70vw, 44svh * 760 / 1648); }
     .walk__stage { gap: .6rem; }
     .walk .co-list { display: grid; order: 3; }
     .co { display: none; }
@@ -294,12 +294,13 @@
     .foot__groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .facts div { grid-template-columns: 1fr; gap: .5rem; }
   }
+  @media (max-width: 960px) and (min-height: 780px) { .walk__phone { width: min(70vw, 52svh * 760 / 1648); } }
   @media (max-width: 700px) {
     .hero__copy { max-width: none; right: var(--sc-gutter); bottom: 40svh; }
     .hero__lift { transform: translateY(calc(var(--sc-p, 0) * -12vh)); }
     .hero__copy h1 { font-size: clamp(2rem, 1.4rem + 3.5vw, 2.6rem); }
     .hero__copy p { margin: 12px 0 18px; font-size: 1rem; }
-    .hero .hero__phone { width: 36vw; right: 6vw; bottom: -16vh; }
+    .hero .hero__phone { width: min(34vw, 30svh * 760 / 1648); right: 6vw; bottom: 3vh; }
     .hero__scrim { inset: -10% 0 -40% 0; background: linear-gradient(to top, rgba(23,22,20,.8) 0%, rgba(23,22,20,.8) 34%, rgba(23,22,20,.76) 76%, rgba(23,22,20,.55) 90%, rgba(23,22,20,0) 100%); -webkit-mask-image: none; mask-image: none; }
     .hero__mist { display: none; }
     .co-list { gap: .35rem; }

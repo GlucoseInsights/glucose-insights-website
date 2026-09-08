@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Glucose Insights. See what your glucose does when you run</title>
-<meta name="description" content="Glucose Insights lines up your CGM against every workout, before, during and after, so Type 1 athletes learn from their own data instead of guessing. Free on iOS and Android.">
-<meta property="og:title" content="Glucose Insights. See what your glucose does when you run">
-<meta property="og:description" content="Your CGM, lined up against every workout. Built by a Type 1 runner, for Type 1 athletes.">
+<title>Glucose Insights. Training with Type 1, with your glucose under it</title>
+<meta name="description" content="Glucose Insights lines up your CGM against every session, before, during and after, so athletes with Type 1 learn from their own data instead of guessing. Free on iOS and Android.">
+<meta property="og:title" content="Glucose Insights. Training with Type 1, with your glucose under it">
+<meta property="og:description" content="For athletes with Type 1 diabetes. Your CGM and pump, lined up against every session. Built by a Type 1 athlete.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://glucoseinsights.com/">
 <meta property="og:image" content="https://glucoseinsights.com/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Glucose Insights. See what your glucose does when you run">
-<meta name="twitter:description" content="Your CGM, lined up against every workout. Built by a Type 1 runner, for Type 1 athletes.">
+<meta name="twitter:title" content="Glucose Insights. Training with Type 1, with your glucose under it">
+<meta name="twitter:description" content="For athletes with Type 1 diabetes. Your CGM and pump, lined up against every session. Built by a Type 1 athlete.">
 <meta name="twitter:image" content="https://glucoseinsights.com/images/og-image.png">
 <link rel="canonical" href="https://glucoseinsights.com/">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -21,604 +21,495 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EWJ9NR8BTV');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 [
-  {"@context":"https://schema.org","@type":"Organization","name":"GlucoseInsights","legalName":"Quantably LTD","url":"https://glucoseinsights.com","logo":"https://glucoseinsights.com/images/logo-full-white.png","description":"Empowering T1D athletes to train smarter with data-driven glucose insights.","email":"help@glucoseinsights.com","founder":{"@type":"Person","name":"Peter","description":"3x GB age-group triathlete. 2:39 marathon PB. 30 years lived T1D experience.","jobTitle":"Founder"}},
+  {"@context":"https://schema.org","@type":"Organization","name":"GlucoseInsights","legalName":"Quantably LTD","url":"https://glucoseinsights.com","logo":"https://glucoseinsights.com/images/logo-full-white.png","description":"CGM analytics for athletes with Type 1 diabetes.","email":"help@glucoseinsights.com","founder":{"@type":"Person","name":"Peter"}},
   {"@context":"https://schema.org","@type":"WebSite","name":"GlucoseInsights","url":"https://glucoseinsights.com"},
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"GlucoseInsights","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","description":"See exactly how exercise affects your glucose. Before, during, and after every workout. Built for Type 1 Diabetic athletes.","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"installUrl":"https://apps.apple.com/gb/app/glucoseinsights/id6447560916","screenshot":"https://glucoseinsights.com/images/og-image.png","author":{"@type":"Organization","name":"Quantably LTD"}},
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"GlucoseInsights","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","description":"Keep the gels. Lose the guesswork. Your CGM and pump, lined up against every session. Built for athletes with Type 1 diabetes.","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"installUrl":"https://apps.apple.com/gb/app/glucoseinsights/id6447560916","screenshot":"https://glucoseinsights.com/images/og-image.png","author":{"@type":"Organization","name":"Quantably LTD"}},
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://glucoseinsights.com/"}]}
 ]
 </script>
 <link rel="stylesheet" href="scrollcraft.css">
 <style>
-  /* ------------------------------------------------------------ brand -- */
+  /* ---------------------------------------------------------- brand ---- */
   :root {
-    --sc-canvas:      #FBFAF7;   /* the app's paper */
+    --sc-canvas:      #FBFAF7;
     --sc-surface:     #FFFFFF;
-    --sc-ink:         #1A1917;
-    --sc-ink-soft:    #625E57;
-    --sc-accent:      #0D9A66;   /* in range. Owns the trace, links, focus */
-    --sc-accent-ink:  #FFFFFF;
-    --sc-font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
-    --sc-font-text:    "DM Sans", system-ui, -apple-system, sans-serif;
-    --sc-font-mono:    "DM Mono", ui-monospace, "SF Mono", monospace;
-    --sc-shadow-color: 35 20% 12%;
-    --sc-r-sm: 8px; --sc-r-md: 14px; --sc-r-lg: 28px;
-    --sc-maxw: 78rem;
-
-    --gi-card:   #FFFFFF;
-    --gi-hair:   rgba(26, 25, 23, 0.09);
-    --gi-high:   #D97706;
-    --gi-low:    #E5484D;
-    --gi-hr:     #C9B8A6;
-    --gi-rail-h: 60px;
-    --gi-bar-h:  64px;
+    --sc-ink:         #171614;
+    --sc-ink-soft:    #6E6A63;
+    --sc-accent:      #0D9A66;
+    --sc-accent-ink:  #FBFAF7;
+    --sc-font-display: "Geist", system-ui, -apple-system, sans-serif;
+    --sc-font-text:    "Geist", system-ui, -apple-system, sans-serif;
+    --sc-font-mono:    "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --sc-shadow-color: 23 22 20;
+    --sc-r-sm: 8px; --sc-r-md: 12px; --sc-r-lg: 20px;
+    --ink-3: #A8A49B;
+    --paper-2: #F4F2ED;
+    --high: #D97706; --low: #E5484D;
+    --mint: #5BE0A9;
+    --hair: rgba(23,22,20,.08); --hair-2: rgba(23,22,20,.14);
+    --z-bar: 60;
   }
-  @media (max-width: 860px) { :root { --gi-rail-h: 54px; --gi-bar-h: 56px; } }
+  html { scroll-behavior: smooth; }
+  body { background: var(--sc-canvas); color: var(--sc-ink); font-family: var(--sc-font-text); }
+  .sc-display { font-weight: 500; }
+  b, strong { font-weight: 600; }
+  ::selection { background: rgba(13,154,102,.18); }
 
-  body { background: var(--sc-canvas); }
+  /* grounds: painted per section, hard cuts, no drift */
+  .g-paper { background: var(--sc-canvas); --sc-ink: #171614; --sc-ink-soft: #6E6A63; color: var(--sc-ink); }
+  .g-ink   { background: #171614; --sc-canvas: #171614; --sc-surface: #221F1B; --sc-ink: #FBFAF7; --sc-ink-soft: #B8B2A8; --sc-accent: #5BE0A9; --hair: rgba(251,250,247,.10); --hair-2: rgba(251,250,247,.18); color: var(--sc-ink); }
+  .g-ink .sc-body { color: var(--sc-ink-soft); letter-spacing: .002em; line-height: 1.66; }
 
-  /* type. Serif display with italic emphasis, mono eyebrows, sans prose. */
-  .gi-display { font-family: var(--sc-font-display); font-weight: 400; line-height: 1.02; letter-spacing: -0.018em; text-wrap: balance; margin: 0; }
-  .gi-display em { font-style: italic; }
-  .gi-display--xl { font-size: clamp(2.8rem, 1.2rem + 4.6vw, 4.9rem); }
-  .gi-display--lg { font-size: clamp(2.3rem, 1.3rem + 3.2vw, 4rem); }
-  .gi-display--md { font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.5rem); }
-  .gi-eyebrow { font-family: var(--sc-font-mono); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sc-accent); margin: 0 0 var(--sc-5); }
-  .gi-eyebrow::before, .gi-eyebrow::after { content: "·"; margin: 0 0.6em; color: var(--sc-ink-soft); }
-  .gi-lede { font-size: var(--sc-t-lg); line-height: 1.45; letter-spacing: -0.005em; color: var(--sc-ink-soft); max-width: 44ch; text-wrap: pretty; margin: 0; }
-  .gi-body { max-width: 58ch; color: var(--sc-ink-soft); text-wrap: pretty; margin: 0; line-height: 1.62; }
-  .gi-small { font-size: var(--sc-t-sm); color: var(--sc-ink-soft); }
-  .gi-fine { font-family: var(--sc-font-mono); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sc-ink-soft); }
-  .gi-mono { font-variant-numeric: tabular-nums; }
-  .gi-center { text-align: center; }
-  .gi-center .gi-lede, .gi-center .gi-body { margin-inline: auto; }
-
-  /* one CTA, one label everywhere */
-  .gi-cta {
-    display: inline-flex; align-items: center; gap: 0.55rem;
-    background: var(--sc-ink); color: var(--sc-canvas);
-    padding: 0.8rem 1.4rem; border-radius: var(--sc-r-pill);
-    text-decoration: none; font-weight: 500; font-size: 0.95rem;
-    white-space: nowrap; transition: transform 140ms var(--sc-ease-out), background 140ms var(--sc-ease-out);
-    box-shadow: var(--sc-e2);
-  }
-  .gi-cta:hover { background: #2d2b28; }
-  .gi-cta:active { transform: scale(0.97); }
-
-  /* the rounded scene card, shared by hero, peak, close */
-  .card { position: relative; border-radius: var(--sc-r-lg); overflow: clip; background: #EED9C9; isolation: isolate; }
-  .card__bg { position: absolute; inset: 0; overflow: clip; z-index: 0; }
-  .card__pl { position: absolute; inset: -6% 0 0 0; height: 112%; width: 100%; object-fit: cover; object-position: 50% 100%; max-width: none; will-change: transform; }
-  .card__pl--sky { transform: translate3d(0, calc(var(--sc-p, 0) * -1.5% + var(--gi-my, 0) * -4px), 0) scale(1.03); }
-  .card__pl--hills { transform: translate3d(calc(var(--gi-mx, 0) * -6px), calc(var(--sc-p, 0) * -4% + var(--gi-my, 0) * -8px), 0); }
-  .card__pl--ground { transform: translate3d(calc(var(--gi-mx, 0) * -12px), calc(var(--sc-p, 0) * -8% + var(--gi-my, 0) * -14px), 0); }
-  .card__vignette { position: absolute; inset: 0; pointer-events: none; z-index: 1; background: radial-gradient(120% 80% at 50% 30%, transparent 55%, rgba(120, 80, 60, 0.12) 100%); }
-
-  /* ------------------------------------------------------------- bar -- */
-  .bar {
-    position: fixed; inset: 0 0 auto 0; z-index: var(--sc-z-chrome);
-    height: var(--gi-bar-h); display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
-    padding-inline: var(--sc-gutter);
-    background: color-mix(in oklab, var(--sc-canvas) 82%, transparent);
-    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
-  }
-  .bar__mark { display: inline-flex; align-items: center; gap: 0.55rem; text-decoration: none; font-weight: 600; letter-spacing: -0.01em; justify-self: start; color: inherit; }
-  .bar__mark svg { width: 26px; height: 26px; }
-  .bar__links { display: flex; gap: 1.6rem; justify-self: center; }
-  .bar__links a { text-decoration: none; font-size: 0.9rem; color: var(--sc-ink); opacity: 0.78; }
+  /* ------------------------------------------------------------ bar ---- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: var(--z-bar); height: 64px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding-inline: var(--sc-gutter); background: rgba(251,250,247,.86); backdrop-filter: saturate(1.2) blur(10px); -webkit-backdrop-filter: saturate(1.2) blur(10px); border-bottom: 1px solid var(--hair); color: #171614; }
+  .bar__mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; font-weight: 600; letter-spacing: -.01em; font-size: 15px; }
+  .bar__mark img { width: 22px; height: auto; display: block; }
+  .bar__links { display: flex; gap: 28px; justify-content: center; }
+  .bar__links a { color: #171614; text-decoration: none; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; font-weight: 500; opacity: .82; }
   .bar__links a:hover { opacity: 1; }
   .bar__cta { justify-self: end; }
-  .bar .gi-cta { padding: 0.55rem 1.05rem; font-size: 0.85rem; box-shadow: var(--sc-e1); }
-  @media (max-width: 860px) { .bar { grid-template-columns: 1fr auto; } .bar__links { display: none; } }
-  @media (max-width: 480px) { .bar__mark span { display: none; } }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 8px; font: 500 15px/1 var(--sc-font-text); letter-spacing: -.005em; text-decoration: none; white-space: nowrap; transition: transform 140ms var(--sc-ease-out), background-color 140ms var(--sc-ease-out), color 140ms; cursor: pointer; border: 0; }
+  .btn:active { transform: translateY(1px) scale(.985); }
+  .btn--ink { background: #171614; color: #FBFAF7; }
+  .btn--ink:hover { background: #2B2925; }
+  .btn--paper { background: #FBFAF7; color: #171614; }
+  .btn--paper:hover { background: #fff; }
+  .btn--ghost { background: transparent; color: inherit; box-shadow: inset 0 0 0 1px var(--hair-2); }
+  .bar .btn { height: 38px; padding: 0 16px; font-size: 14px; }
+  :focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
 
-  /* ------------------------------------------------------------ hero -- */
-  .hero__stage { display: grid; padding: calc(var(--gi-bar-h) + 0.75rem) var(--sc-gutter) 0; }
-  .hero__card { height: calc(100% - 6vh); }
-  .hero__copy { position: absolute; inset-inline: 0; top: clamp(2rem, 5.5vh, 4rem); z-index: 3; display: grid; justify-items: center; text-align: center; padding-inline: var(--sc-gutter); }
-  .hero__copy .gi-display { max-width: 14ch; }
-  .hero__copy .gi-eyebrow { color: var(--sc-ink); opacity: 0.7; }
-  .hero__copy .gi-lede { margin-top: var(--sc-4); max-width: 44ch; color: var(--sc-ink); opacity: 0.78; font-size: clamp(1rem, 0.9rem + 0.5vw, 1.2rem); }
-  .hero__copy .gi-cta { margin-top: var(--sc-5); }
-  .hero__copy .gi-fine { margin-top: var(--sc-3); }
-  .hero__phone {
-    position: absolute; left: 50%; top: 76%; z-index: 4;
-    width: clamp(240px, 24vw, 340px);
-    transform: translate3d(calc(-50% + var(--gi-mx, 0) * -10px), calc(var(--sc-p, 0) * -10vh + var(--gi-my, 0) * -6px), 0);
-    will-change: transform;
-  }
-  .hero__chip {
-    position: absolute; left: calc(50% + clamp(130px, 13vw, 190px)); top: 80%; z-index: 5;
-    transform: translate3d(calc(var(--gi-mx, 0) * -16px), calc(var(--sc-p, 0) * -10vh + var(--gi-my, 0) * -10px), 0);
-    will-change: transform;
-  }
-  .chip { display: inline-flex; align-items: center; gap: 0.55rem; background: var(--sc-ink); color: var(--sc-canvas); border-radius: var(--sc-r-pill); padding: 0.5rem 0.9rem 0.5rem 0.7rem; font-family: var(--sc-font-mono); font-size: 0.72rem; letter-spacing: 0.04em; box-shadow: var(--sc-e2); white-space: nowrap; }
-  .chip b { font-family: var(--sc-font-display); font-weight: 400; font-size: 1.25rem; letter-spacing: -0.02em; line-height: 1; font-variant-numeric: tabular-nums; }
-  .chip i { font-style: normal; color: #5BE0A9; }
-  .chip s { text-decoration: none; opacity: 0.6; }
-  .hero__note { position: absolute; left: 50%; top: 58%; transform: translateX(-50%); z-index: 5; white-space: nowrap; background: rgba(255,255,255,0.82); padding: 0.5rem 0.9rem; border-radius: var(--sc-r-pill); box-shadow: var(--sc-e1); color: var(--sc-ink); }
-  .hero__floor { position: absolute; inset: auto 0 0 0; height: 18%; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(251,250,247,0), rgba(251,250,247,0.6)); }
+  /* ----------------------------------------------------------- hero ---- */
+  .hero { position: relative; }
+  .hero__video, .hero__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero__video { opacity: 0; transition: opacity 600ms var(--sc-ease-out); }
+  .hero__video.is-live { opacity: 1; }
+  .hero__mist { position: absolute; inset: auto 0 -40% 0; height: 100%; background: linear-gradient(to top, rgba(23,22,20,.62) 0%, rgba(23,22,20,.42) 45%, rgba(23,22,20,0) 100%); transform: translateY(calc(var(--sc-p, 0) * -16vh)); pointer-events: none; }
+  .hero__scrim { position: absolute; inset: -30% 0 -40% 0; background: linear-gradient(to right, rgba(23,22,20,.78) 0%, rgba(23,22,20,.7) 36%, rgba(23,22,20,.36) 54%, rgba(23,22,20,0) 68%); -webkit-mask-image: linear-gradient(to top, #000 66%, transparent 96%); mask-image: linear-gradient(to top, #000 66%, transparent 96%); pointer-events: none; transform: translateY(calc(var(--sc-p, 0) * -22vh)); }
+  .hero__lift { position: absolute; inset: 0; pointer-events: none; transform: translateY(calc(var(--sc-p, 0) * -22vh)); }
+  .hero__copy { position: absolute; left: var(--sc-gutter); bottom: clamp(3.5rem, 12vh, 8rem); max-width: min(38rem, 70vw); color: #FBFAF7; pointer-events: auto; }
+  .hero__copy .hero__eyebrow { margin: 0 0 14px; max-width: none; white-space: nowrap; font-family: var(--sc-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #FBFAF7; font-weight: 500; }
+  .hero__copy h1 { font-size: clamp(2.4rem, 1.4rem + 3.2vw, 4.2rem); line-height: 1.02; letter-spacing: -.03em; font-weight: 500; text-wrap: balance; margin: 0; }
+  .hero__copy p { margin: 18px 0 26px; font-size: clamp(1rem, .9rem + .5vw, 1.2rem); line-height: 1.5; max-width: 34ch; color: rgba(251,250,247,.9); }
+  .hero .hero__phone { position: absolute; right: clamp(2rem, 9vw, 12rem); bottom: -8vh; width: clamp(200px, 18vw, 290px); transform: translate3d(calc((var(--sc-mx, .5) - .5) * -22px), calc(var(--sc-p, 0) * -9vh + (var(--sc-my, .5) - .5) * -14px), 0); }
+  .hero__pause { position: absolute; left: var(--sc-gutter); bottom: 16px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(251,250,247,.5); background: rgba(23,22,20,.35); color: #FBFAF7; display: grid; place-items: center; cursor: pointer; padding: 0; }
+  .hero__pause svg { width: 12px; height: 12px; }
+  .hero__pause .i-play { display: none; }
+  .hero__pause[aria-pressed="true"] .i-play { display: block; }
+  .hero__pause[aria-pressed="true"] .i-pause { display: none; }
 
-  @media (max-width: 860px) {
-    .hero__stage { padding: calc(var(--gi-bar-h) + 0.5rem) var(--sc-4) 0; }
-    .hero__card { height: calc(100% - var(--gi-rail-h) - 1rem); }
-    .hero__copy { top: clamp(1.5rem, 5vh, 3rem); padding-inline: var(--sc-4); }
-    .hero__copy .gi-display { font-size: clamp(2.2rem, 10.5vw, 3rem); max-width: 12ch; }
-    .hero__copy .gi-lede { font-size: 1rem; max-width: 30ch; margin-top: var(--sc-4); }
-    .hero__copy .gi-cta { margin-top: var(--sc-5); }
-    .hero__copy .gi-fine { display: none; }
-    .hero__phone { width: 52vw; top: 66%; transform: translate3d(-50%, calc(var(--sc-p, 0) * -8vh), 0); }
-    .hero__chip { left: auto; right: 4%; top: 70%; transform: translate3d(0, calc(var(--sc-p, 0) * -6vh), 0); }
-    .chip { padding: 0.4rem 0.7rem 0.4rem 0.6rem; font-size: 0.62rem; }
-    .hero__chip .chip span { display: none; }
-    .hero__chip { right: 3%; }
-    .chip b { font-size: 1.05rem; }
-    .hero__note { display: none; }
-  }
+  /* phone frame: real screens only */
+  .phone { position: relative; border-radius: clamp(22px, 3vw, 44px); background: #111; padding: clamp(4px, 0.62vw, 9px); box-shadow: 0 30px 60px -20px rgba(23,22,20,.55), 0 2px 0 rgba(255,255,255,.08) inset; }
+  .phone__screen { position: relative; width: 100%; aspect-ratio: 760 / 1648; border-radius: clamp(18px, 2.4vw, 36px); overflow: hidden; background: #FBFAF7; }
+  .phone__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .phone--soft { box-shadow: 0 40px 80px -30px rgba(23,22,20,.6); }
 
-  @media (max-width: 860px) and (max-height: 720px) {
-    .hero__copy .gi-display { font-size: clamp(1.9rem, 9vw, 2.4rem); }
-    .hero__copy .gi-lede { font-size: 0.92rem; max-width: 34ch; }
-    .hero__phone { top: 84%; }
-    .hero__chip { top: 86%; }
-  }
-  .phone { aspect-ratio: 760 / 1648; border-radius: 13% / 6%; background: #1c1b19; padding: 2.8%; box-shadow: var(--sc-e3), inset 0 0 0 1.5px rgba(255,255,255,0.08); }
-  .phone img { width: 100%; height: 100%; object-fit: cover; border-radius: 11% / 5%; display: block; }
+  /* ----------------------------------------------------------- pain ---- */
+  .pain { padding-block: calc(var(--sc-section) * 1.1) var(--sc-section); }
+  .pain__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 7rem); align-items: center; }
+  .pain h2 { font-size: clamp(1.8rem, 1rem + 2.4vw, 3.2rem); letter-spacing: -.03em; line-height: 1.02; }
+  /* rotating noun: all words stack in one grid cell so the line never reflows; the live one sits, the next waits below, the last leaves above */
+  .rot { display: inline-grid; vertical-align: top; clip-path: inset(-.12em 0 -.16em 0); }
+  .rot__w { grid-area: 1 / 1; white-space: nowrap; opacity: 0; transform: translateY(130%); transition: transform .38s cubic-bezier(.22, 1, .36, 1), opacity .22s ease; will-change: transform; }
+  .rot__w.is-on { opacity: 1; transform: none; }
+  .rot__w.is-past { opacity: 0; transform: translateY(-130%); }
+  .pain__lines { display: grid; gap: 14px; }
+  .pain__lines p { font-size: clamp(1.05rem, .95rem + .5vw, 1.3rem); line-height: 1.45; color: var(--sc-ink); max-width: 30ch; margin: 0; }
+  .pain__lines p + p { padding-top: 14px; border-top: 1px solid var(--hair); }
+  .works { margin-top: calc(var(--sc-section) * .8); padding-top: 26px; border-top: 1px solid var(--hair); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px 34px; align-items: center; }
+  .works__track { display: flex; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+  .works__track .works__list { flex: 0 0 auto; flex-wrap: nowrap; gap: 0; padding-right: 56px; animation: works-slide 32s linear infinite; }
+  .works__track .works__list li { padding-right: 56px; }
+  @keyframes works-slide { to { transform: translateX(-100%); } }
+  .works__track:hover .works__list { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .works__track .works__list { animation: none; } .works__track .works__list[aria-hidden] { display: none; } .works__track { -webkit-mask-image: none; mask-image: none; } .works__track .works__list { flex-wrap: wrap; row-gap: 10px; } }
+  .works__label { font-family: var(--sc-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--sc-ink-soft); }
+  .works__list { display: flex; flex-wrap: wrap; gap: 8px 26px; margin: 0; padding: 0; list-style: none; }
+  @media (max-width: 960px) { .works { grid-template-columns: 1fr; } }
+  .works__list li { font-size: 15px; font-weight: 500; color: var(--sc-ink); display: inline-flex; align-items: center; gap: 8px; opacity: .78; }
+  .lg { display: inline-block; background: currentColor; -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+  .lg--dexcom { --m: url(assets/logos/dexcom.svg); width: 96px; height: 22px; }
+  .lg--strava { --m: url(assets/logos/strava.svg); width: 90px; height: 19px; }
+  .lg--ns { --m: url(assets/logos/nightscout.svg); width: 16px; height: 22px; }
+  .lg--ah { --m: url(assets/logos/apple-health.svg); width: 20px; height: 18px; }
+  .lg--glooko { --m: url(assets/logos/glooko.svg); width: 64px; height: 25px; }
+  .lg--tandem { --m: url(assets/logos/tandem.svg); width: 108px; height: 24px; }
 
-  /* ------------------------------------------------------- sections -- */
-  .sec { padding-block: clamp(4rem, 8vw, 7.5rem); }
-  .sec--tight { padding-block: clamp(2.5rem, 5vw, 4rem); }
-  .sec__head { display: grid; justify-items: center; text-align: center; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
-  .sec__head .gi-display { max-width: 20ch; }
-  .sec__head .gi-lede { margin-top: var(--sc-5); }
+  /* ---------------------------------------------------------- walker ---- */
+  .walk { --p: var(--sc-p, 0); }
+  .walk__stage { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: center; gap: clamp(1rem, 4vw, 4rem); padding-inline: var(--sc-gutter); }
+  .walk__copy { align-self: center; position: relative; min-height: 14rem; }
+  .walk__copy h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.6rem); letter-spacing: -.03em; line-height: 1.04; margin: 0 0 1.6rem; max-width: 14ch; }
+  .walk__step { position: absolute; left: 0; right: 0; top: calc(100% - 4rem); max-width: 30ch; margin: 0; font-size: clamp(1rem, .9rem + .5vw, 1.2rem); line-height: 1.5; color: var(--sc-ink-soft); }
+  .walk__step b { color: var(--sc-ink); font-weight: 500; display: block; margin-bottom: 4px; }
+  .walk__scene { position: relative; height: min(84svh, 800px); display: grid; place-items: center; }
+  .walk__phone { width: min(360px, 37svh); position: relative; }
+  .walk__phone .phone__screen img { transition: none; }
+  /* the screens: feed under, detail slides over, plan slides over that */
+  .scr--detail { transform: translateX(clamp(0%, calc((0.36 - var(--p)) * 800%), 100%)); }
+  .scr--plan   { transform: translateX(clamp(0%, calc((0.90 - var(--p)) * 900%), 100%)); }
+  .feed-shift  { transform: none; }
+  /* tap ring on the Lunch Run card */
+  .tap { position: absolute; left: 5%; width: 90%; top: 71%; height: 12.5%; border-radius: 14px; box-shadow: 0 0 0 2px var(--sc-accent), 0 0 0 6px rgba(91,224,169,.22); opacity: clamp(0, calc((var(--p) - .12) * 12), 1); transform: scale(calc(1 - clamp(0, (var(--p) - .26) * 10, 1) * .03)); pointer-events: none; }
+  .tap::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: rgba(91,224,169,.10); opacity: clamp(0, calc((var(--p) - .26) * 12), 1); }
+  /* callouts */
+  .co { position: absolute; width: min(240px, 26vw); font-size: 14px; line-height: 1.4; color: var(--sc-ink); --at: 0; --out: 2; --show: calc(clamp(0, (var(--p) - var(--at)) * 14, 1) * (1 - clamp(0, (var(--p) - var(--out)) * 14, 1))); opacity: var(--show); transform: translateY(calc((1 - var(--show)) * 10px)); }
+  .co b { display: block; font-weight: 500; margin-bottom: 2px; }
+  .co small { color: var(--sc-ink-soft); font-size: 13px; }
+  .co__line { position: absolute; background: var(--hair-2); }
+  .co__dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--sc-accent); box-shadow: 0 0 0 4px rgba(91,224,169,.2); }
+  .co--l { text-align: right; right: calc(50% + min(180px, 18.5svh) + 34px); }
+  .co--r { left: calc(50% + min(180px, 18.5svh) + 34px); }
+  .co--l .co__line { right: -34px; width: 30px; height: 1px; top: 12px; }
+  .co--r .co__line { left: -34px; width: 30px; height: 1px; top: 12px; }
+  .co--l .co__dot { right: -40px; top: 7px; }
+  .co--r .co__dot { left: -40px; top: 7px; }
+  .co--1 { --at: .40; --out: .86; top: 22%; }
+  .co--2 { --at: .52; --out: .86; top: 43%; }
+  .co--3 { --at: .66; --out: .86; top: 70%; }
+  .co--4 { --at: .93; top: 66%; }
+  .walk__steps p { --at: 0; }
+  .walk__note { position: absolute; left: var(--sc-gutter); bottom: 22px; font-size: 12px; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); letter-spacing: .04em; }
 
-  /* works with */
-  .works { display: flex; align-items: center; justify-content: center; gap: clamp(1.4rem, 3.4vw, 3rem); flex-wrap: wrap; }
-  .works__logo { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.95rem; color: var(--sc-ink); opacity: 0.75; }
-  .works__logo img { width: 22px; height: 22px; object-fit: contain; }
+  /* -------------------------------------------------------- marathon ---- */
+  .race { background: linear-gradient(180deg, #171614 0%, #211E1A 60%, #171614 100%); }
+  .race__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: end; margin-bottom: 3rem; }
+  .race__head h2 { font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem); letter-spacing: -.03em; line-height: 1.02; max-width: 14ch; margin: 0; }
+  .race__stats { display: flex; gap: clamp(1.2rem, 3vw, 3rem); font-variant-numeric: tabular-nums; }
+  .race__stats div { display: grid; gap: 4px; }
+  .race__stats b { font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem); font-weight: 500; letter-spacing: -.02em; }
+  .race__stats span { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); }
+  .race__wrap { position: relative; height: clamp(360px, 52vh, 520px); }
+  .race__board { position: absolute; inset: 0; }
+  .race__labels { position: absolute; inset: 0; pointer-events: none; }
+  .race__chart { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .race__band { fill: rgba(91,224,169,.10); }
+  .race__gl { fill: none; stroke: var(--sc-accent); stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+  .race__hr { fill: none; stroke: rgba(229,72,77,.55); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+  .race__tick { stroke: rgba(251,250,247,.22); vector-effect: non-scaling-stroke; }
+  .race__tick--major { stroke: rgba(251,250,247,.45); }
+  .race__base { stroke: rgba(251,250,247,.35); vector-effect: non-scaling-stroke; }
+  .race__lbl { position: absolute; bottom: -26px; transform: translateX(-50%); font-family: var(--sc-font-mono); font-size: 11px; letter-spacing: .06em; color: var(--sc-ink-soft); }
+  .race__axis { position: absolute; left: -8px; transform: translate(-100%, -50%); font-family: var(--sc-font-mono); font-size: 11px; color: var(--sc-ink-soft); }
+  .card { position: absolute; width: 196px; padding: 16px 18px; border-radius: 8px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .card b { display: block; font-weight: 500; font-size: 17px; letter-spacing: -.01em; }
+  .card span { display: block; color: var(--sc-ink-soft); font-size: 14px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .card em { font-style: normal; color: var(--sc-accent); }
+  .card i { position: absolute; left: 12px; top: 100%; width: 1px; height: var(--h); background: rgba(251,250,247,.45); }
+  .card i::after { content: ""; position: absolute; left: -3.5px; bottom: -4px; width: 8px; height: 8px; border-radius: 50%; background: #FBFAF7; }
+  .race__note { margin-top: 3.4rem; font-size: 13px; color: var(--sc-ink-soft); max-width: 60ch; }
+  .race__note a { color: inherit; }
 
-  /* the guess */
-  .guess__lines { list-style: none; margin: 0 auto; padding: 0; max-width: 34rem; }
-  .guess__lines li { font-family: var(--sc-font-display); font-size: clamp(1.4rem, 1rem + 1.6vw, 2.2rem); line-height: 1.2; padding: 0.55em 0; border-top: 1px solid var(--gi-hair); text-align: center; }
-  .guess__lines li:last-child { border-bottom: 1px solid var(--gi-hair); }
-  .guess__turn { margin: var(--sc-7) auto 0; text-align: center; max-width: 44ch; }
-  .guess__turn strong { color: var(--sc-ink); font-weight: 500; }
-  /* an authored breath before the trace stands up. BRIEF.md §7. */
-  .guess__breath { height: 16vh; }
+  /* ------------------------------------------------------------- fan ---- */
+  .fan-sec h2 { font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem); letter-spacing: -.03em; line-height: 1.02; max-width: 16ch; margin: 0 0 1rem; }
+  .fan-sec .lede { max-width: 44ch; color: var(--sc-ink-soft); font-size: 1.1rem; line-height: 1.5; margin: 0; }
+  .fan { position: relative; height: clamp(420px, 60vh, 640px); margin-top: 3rem; overflow: visible; }
+  .fan__p { position: absolute; left: 50%; bottom: 0; width: clamp(150px, 15vw, 220px); border-radius: 30px; box-shadow: 0 30px 60px -24px rgba(23,22,20,.5); transform-origin: 50% 130%; transform: translateX(-50%) translateY(60px); opacity: 0; transition: transform 1s var(--sc-ease-out), opacity .7s var(--sc-ease-out); }
+  .fan__p img { width: 100%; height: auto; display: block; border-radius: inherit; }
+  .fan.sc-in .fan__p { opacity: 1; }
+  .fan.sc-in .fan__p[data-i="-2"] { transform: translateX(calc(-50% - 2 * clamp(120px, 12vw, 190px))) rotate(-12deg) translateY(72px); transition-delay: 180ms; }
+  .fan.sc-in .fan__p[data-i="-1"] { transform: translateX(calc(-50% - 1 * clamp(120px, 12vw, 190px))) rotate(-6deg) translateY(28px); transition-delay: 90ms; }
+  .fan.sc-in .fan__p[data-i="0"]  { transform: translateX(-50%) rotate(0deg) translateY(0); width: clamp(170px, 17vw, 250px); z-index: 2; }
+  .fan.sc-in .fan__p[data-i="1"]  { transform: translateX(calc(-50% + 1 * clamp(120px, 12vw, 190px))) rotate(6deg) translateY(28px); transition-delay: 90ms; }
+  .fan.sc-in .fan__p[data-i="2"]  { transform: translateX(calc(-50% + 2 * clamp(120px, 12vw, 190px))) rotate(12deg) translateY(72px); transition-delay: 180ms; }
+  .fan__p[data-i="0"] { width: clamp(170px, 17vw, 250px); z-index: 2; }
+  .facts { margin-top: clamp(6rem, 12vh, 9rem); border-top: 1px solid var(--hair); }
+  .facts div { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1rem; padding: 18px 0; border-bottom: 1px solid var(--hair); align-items: baseline; }
+  .chip { display: inline-block; font-family: var(--sc-font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; background: #171614; color: #FBFAF7; padding: 6px 10px; border-radius: 6px; }
+  .facts p { margin: 0; color: var(--sc-ink-soft); font-size: 15.5px; line-height: 1.5; max-width: 62ch; }
 
-  /* how it works: three cards, the reference's own idiom */
-  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-  .step { background: var(--gi-card); border: 1px solid var(--gi-hair); border-radius: var(--sc-r-lg); overflow: clip; box-shadow: var(--sc-e1); display: grid; grid-template-rows: auto 1fr; }
-  .step__vis { position: relative; aspect-ratio: 4 / 3; overflow: clip; background: #EED9C9; isolation: isolate; }
-  .step__vis > img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .step__vis .photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 30%; }
-  .step__chips { position: absolute; inset: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; align-content: center; justify-content: center; padding: 1.5rem; }
-  .step__chips span { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--sc-surface); border-radius: var(--sc-r-pill); padding: 0.4rem 0.75rem; font-size: 0.8rem; font-weight: 500; box-shadow: var(--sc-e1); }
-  .step__chips img { width: 16px; height: 16px; object-fit: contain; }
-  .step__spark { position: absolute; inset: 12% 8%; background: var(--sc-surface); border-radius: var(--sc-r-md); box-shadow: var(--sc-e2); padding: 0.8rem 0.9rem; display: grid; grid-template-rows: auto 1fr; gap: 0.4rem; }
-  .step__spark svg { width: 100%; height: 100%; overflow: visible; }
-  .step__spark .band { fill: color-mix(in oklab, var(--sc-accent) 10%, transparent); }
-  .step__spark .glu { fill: none; stroke: var(--sc-accent); stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
-  .step__spark .race { stroke: var(--sc-ink); stroke-opacity: 0.25; stroke-width: 1; stroke-dasharray: 2 3; vector-effect: non-scaling-stroke; }
-  .step__body { padding: 1.4rem 1.5rem 1.6rem; }
-  .step__body .gi-fine { color: var(--sc-accent); }
-  .step__body h3 { font-family: var(--sc-font-text); font-weight: 600; font-size: 1.05rem; margin: 0.55rem 0 0.4rem; letter-spacing: -0.01em; }
-  .step__body p { margin: 0; color: var(--sc-ink-soft); font-size: 0.92rem; line-height: 1.55; }
-  @media (max-width: 860px) { .steps { grid-template-columns: 1fr; } .step__vis { aspect-ratio: 16 / 9; } }
+  /* --------------------------------------------------------- founder ---- */
+  .founder { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .founder__photo { border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 5; }
+  .founder__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; display: block; }
+  .founder h2 { font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem); letter-spacing: -.03em; line-height: 1.02; margin: 0 0 1.2rem; max-width: 12ch; }
+  .founder p { color: var(--sc-ink-soft); font-size: 1.1rem; line-height: 1.55; max-width: 46ch; margin: 0; }
+  .founder__nums { display: flex; gap: clamp(1.5rem, 4vw, 3.5rem); margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--hair); font-variant-numeric: tabular-nums; }
+  .founder__nums div { display: grid; gap: 3px; }
+  .founder__nums b { font-size: clamp(1.5rem, 1rem + 1.6vw, 2.2rem); font-weight: 500; letter-spacing: -.02em; }
+  .founder__nums span { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); }
+  .quote { max-width: 34rem; margin: calc(var(--sc-section) * .8) auto 0; padding-left: .9rem; display: grid; gap: 1.4rem; }
+  .quote blockquote { margin: 0; position: relative; font-size: clamp(1.25rem, 1rem + 1vw, 1.6rem); line-height: 1.38; letter-spacing: -.015em; font-weight: 500; }
+  .quote .qm { color: var(--ink-3); user-select: none; }
+  .quote .qm--open { position: absolute; left: -.9rem; }
+  .quote figcaption { display: flex; align-items: center; gap: .6rem; margin-left: auto; width: 60%; font-size: 14px; }
+  .quote figcaption i { flex: 1; height: 1px; background: var(--hair-2); }
+  .quote figcaption b { font-weight: 500; }
+  .quote figcaption span { color: var(--sc-ink-soft); }
+  .quote figcaption a { color: inherit; text-decoration: none; }
 
-  /* --------------------------------------------------------- the peak -- */
-  .peak__stage { display: grid; grid-template-rows: auto 1fr; gap: clamp(1rem, 2vh, 1.6rem); padding: calc(var(--gi-bar-h) + 0.75rem) var(--sc-gutter) calc(var(--gi-rail-h) + 1rem); }
-  .peak__head { display: grid; justify-items: center; text-align: center; }
-  .peak__head .gi-eyebrow { margin-bottom: var(--sc-3); }
-  .peak__card { min-height: 0; }
-  .peak__grid { position: relative; z-index: 3; height: 100%; display: grid; grid-template-columns: minmax(15rem, 0.34fr) 1fr; gap: 1.25rem; padding: 1.5rem; }
-  .peak__aside { display: grid; align-content: end; gap: 0.75rem; }
-  .peak__noteslot { position: relative; min-height: 9.5rem; }
-  .peak__note { background: var(--sc-ink); color: var(--sc-canvas); border-radius: var(--sc-r-md); padding: 1rem 1.1rem 1.1rem; box-shadow: var(--sc-e2); opacity: 0; transform: translate3d(0, 10px, 0); transition: opacity 260ms var(--sc-ease-out), transform 260ms var(--sc-ease-out); position: absolute; inset: auto 0 0 0; }
-  .peak__note.is-on { opacity: 1; transform: none; }
-  .peak__note .gi-fine { color: #5BE0A9; display: block; margin-bottom: 0.5rem; }
-  .peak__note b { font-family: var(--sc-font-display); font-weight: 400; font-size: 1.25rem; line-height: 1.15; display: block; letter-spacing: -0.01em; }
-  .peak__note span:not(.gi-fine) { display: block; margin-top: 0.4rem; font-size: 0.86rem; line-height: 1.45; opacity: 0.78; }
-  .peak__route { width: clamp(80px, 8vw, 120px); aspect-ratio: 1; justify-self: start; }
-  .peak__route path { fill: none; stroke: var(--sc-ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: 0.25; }
-  .peak__route path.is-drawn { opacity: 1; stroke: var(--sc-accent); }
-  .peak__panel { position: relative; background: var(--sc-surface); border-radius: var(--sc-r-md); box-shadow: var(--sc-e2); padding: 1rem 1rem 0.8rem; display: grid; grid-template-rows: auto 1fr; gap: 0.4rem; min-height: 0; transform-origin: 50% 100%; will-change: transform, opacity; }
-  .peak__paneltop { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-  .peak__paneltop .t { font-weight: 600; font-size: 0.9rem; }
-  .peak__legend { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.68rem; color: var(--sc-ink-soft); }
-  .peak__legend i { display: inline-block; width: 16px; height: 3px; border-radius: 2px; vertical-align: middle; margin-right: 0.35rem; }
-  .peak__chart { width: 100%; height: 100%; min-height: 0; overflow: visible; }
-  .peak__chart text { font-family: var(--sc-font-mono); font-size: 11px; fill: var(--sc-ink-soft); }
-  .peak__chart .band { fill: color-mix(in oklab, var(--sc-accent) 9%, transparent); }
-  .peak__chart .grid { stroke: var(--sc-ink); stroke-opacity: 0.07; stroke-width: 1; }
-  .peak__chart .race { stroke: var(--sc-ink); stroke-opacity: 0.3; stroke-width: 1; stroke-dasharray: 3 4; }
-  .peak__chart .hr { fill: none; stroke: var(--gi-hr); stroke-width: 1.5; }
-  .peak__chart .glu { fill: none; stroke: var(--sc-accent); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
-  .peak__chart .glu-ghost { fill: none; stroke: var(--sc-ink); stroke-opacity: 0.08; stroke-width: 3; stroke-linecap: round; }
-  .peak__chart .split { fill: var(--sc-ink); fill-opacity: 0.12; }
-  .peak__chart .split.is-past { fill-opacity: 0.5; }
-  .peak__chart .head { stroke: var(--sc-ink); stroke-width: 1; }
-  .peak__chart .dot { fill: var(--sc-accent); stroke: #fff; stroke-width: 3; }
-  .peak__readout { position: absolute; top: 3.4rem; left: 1rem; will-change: transform; pointer-events: none; }
-  @media (max-width: 860px) {
-    .peak__stage { padding-inline: var(--sc-4); gap: 0.6rem; }
-    .peak__head .gi-display { font-size: 1.7rem; }
-    .peak__grid { grid-template-columns: 1fr; grid-template-rows: 1fr auto; padding: 0.75rem; gap: 0.75rem; }
-    .peak__aside { order: 2; }
-    .peak__route { display: none; }
-    .peak__noteslot { min-height: 7.5rem; }
-    .peak__note { padding: 0.8rem 0.9rem; }
-    .peak__note b { font-size: 1.05rem; }
-    .peak__note span:not(.gi-fine) { font-size: 0.78rem; }
-    .peak__legend { display: none; }
-    .peak__readout { top: 2.6rem; left: 0.6rem; }
-  }
-
-  /* ------------------------------------------------------ the screens -- */
-  .screens__stage { display: flex; align-items: center; }
-  .screens__rail { align-items: center; gap: clamp(2rem, 5vw, 5rem); padding-inline: var(--sc-gutter); }
-  .screens__lead { flex: 0 0 auto; width: min(28rem, 78vw); }
-  .screens__lead .gi-body { margin-top: var(--sc-5); }
-  .screen { flex: 0 0 auto; width: clamp(14rem, 18vw, 17rem); display: grid; gap: var(--sc-4); }
-  .screen .phone { width: 100%; }
-  .screen dl { margin: 0; display: grid; gap: 0.2rem; text-align: center; }
-  .screen dt { font-weight: 600; font-size: 0.95rem; }
-  .screen dd { margin: 0; color: var(--sc-ink-soft); font-size: 0.86rem; text-wrap: pretty; }
-  .screens__end { flex: 0 0 auto; width: min(22rem, 70vw); padding-right: var(--sc-gutter); text-align: center; }
-  .screens__end .gi-cta { margin-top: var(--sc-5); }
-  @media (prefers-reduced-motion: no-preference) {
-    .screen { opacity: 0.55; transform: translate3d(0, 10px, 0); transition: opacity 320ms var(--sc-ease-out), transform 320ms var(--sc-ease-out); }
-    .screen.is-settled { opacity: 1; transform: none; }
-  }
-  @media (max-width: 860px) { .screens__lead { width: 80vw; } .screen { width: 58vw; } }
-
-  /* --------------------------------------------------------- founder -- */
-  .founder { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; background: var(--gi-card); border: 1px solid var(--gi-hair); border-radius: var(--sc-r-lg); padding: clamp(1.25rem, 3vw, 2.5rem); box-shadow: var(--sc-e1); }
-  .founder__fig { margin: 0; }
-  .founder__fig img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: calc(var(--sc-r-lg) - 10px); }
-  .founder__fig figcaption { margin-top: var(--sc-3); }
-  .founder__copy .gi-body + .gi-body { margin-top: var(--sc-4); }
-  .founder__sig { margin-top: var(--sc-5); font-family: var(--sc-font-display); font-size: var(--sc-t-lg); }
-  .founder__nums { display: flex; gap: clamp(1.5rem, 4vw, 3.5rem); margin-top: var(--sc-6); padding-top: var(--sc-5); border-top: 1px solid var(--gi-hair); }
-  .founder__nums div { display: grid; gap: 0.15rem; }
-  .founder__nums b { font-family: var(--sc-font-display); font-weight: 400; font-size: clamp(2rem, 1.4rem + 2vw, 3rem); line-height: 1; letter-spacing: -0.02em; }
-  .founder__nums span { font-size: var(--sc-t-xs); color: var(--sc-ink-soft); }
-  @media (max-width: 860px) { .founder { grid-template-columns: 1fr; } .founder__fig img { aspect-ratio: 4 / 3; } }
-
-  /* ------------------------------------------------------------ love -- */
-  .love { display: grid; grid-template-columns: 1.4fr 0.6fr; gap: 1.25rem; align-items: stretch; margin-top: 1.25rem; }
-  .love__quote { background: #FFF7D6; border: 1px solid rgba(180, 140, 40, 0.18); border-radius: var(--sc-r-lg); padding: clamp(1.5rem, 3vw, 2.5rem); display: grid; align-content: space-between; gap: 1.5rem; margin: 0; }
-  .love__quote p { font-family: var(--sc-font-display); font-size: clamp(1.4rem, 1rem + 1.4vw, 2.1rem); line-height: 1.22; margin: 0; }
-  .love__quote p mark { background: linear-gradient(transparent 55%, #FFE58A 55%); color: inherit; }
-  .love__quote footer { font-family: var(--sc-font-mono); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sc-ink-soft); }
-  .love__tile { background: var(--sc-ink); color: var(--sc-canvas); border-radius: var(--sc-r-lg); padding: clamp(1.5rem, 3vw, 2.5rem); display: grid; justify-items: center; align-content: center; text-align: center; gap: 0.6rem; }
-  .love__tile .gi-display { font-size: 1.5rem; }
-  .love__tile a { color: #5BE0A9; font-family: var(--sc-font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; margin-top: 0.4rem; }
-  .love__tile a:hover { text-decoration: underline; }
-  @media (max-width: 860px) { .love { grid-template-columns: 1fr; } }
-
-  /* ----------------------------------------------------------- close -- */
-  .close__stage { height: auto; min-height: 100svh; display: grid; grid-template-rows: 1fr auto; padding: calc(var(--gi-bar-h) + 0.75rem) var(--sc-gutter) 0; gap: clamp(1.5rem, 4vh, 3rem); }
-  .close__card { min-height: 52vh; display: grid; }
-  .close__inner { position: relative; z-index: 3; display: grid; justify-items: center; align-content: center; text-align: center; padding: clamp(2rem, 6vh, 4rem) var(--sc-gutter); }
-  .close__inner .gi-display { max-width: 16ch; }
-  .close__stores { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin-top: var(--sc-6); }
-  .store { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1.1rem 0.6rem 0.9rem; border-radius: var(--sc-r-md); background: #1A1917; color: #FBFAF7; text-decoration: none; box-shadow: var(--sc-e2); transition: transform 140ms var(--sc-ease-out); }
-  .store:hover { background: #2d2b28; }
-  .store:active { transform: scale(0.97); }
+  /* ----------------------------------------------------------- close ---- */
+  .close { padding-block: var(--sc-section) 0; }
+  .close__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .close h2 { font-size: clamp(2.4rem, 1.5rem + 3.4vw, 4.6rem); letter-spacing: -.03em; line-height: 1.02; margin: 0 0 1.8rem; max-width: 13ch; }
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; }
+  .store { display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 18px 0 14px; border-radius: 8px; background: #FBFAF7; color: #171614; text-decoration: none; transition: transform 140ms var(--sc-ease-out), background-color 140ms; }
+  .store:hover { background: #fff; }
+  .store:active { transform: translateY(1px); }
   .store svg { width: 22px; height: 22px; }
-  .store div { display: grid; line-height: 1.05; text-align: left; }
-  .store small { font-size: 0.62rem; letter-spacing: 0.02em; opacity: 0.8; }
-  .store b { font-weight: 600; font-size: 1rem; }
-  .close__inner .gi-fine { margin-top: var(--sc-5); }
-  .foot { background: #1A1917; color: #FBFAF7; border-radius: var(--sc-r-lg) var(--sc-r-lg) 0 0; padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 4vw, 3.5rem) calc(var(--gi-rail-h) + 1.5rem); display: grid; grid-template-columns: 1.2fr 1fr 1fr 1.3fr; gap: 2rem; }
-  .foot .bar__mark { color: #FBFAF7; }
-  .foot h4 { font-family: var(--sc-font-mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: #9A948B; margin: 0 0 0.9rem; font-weight: 500; }
-  .foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
-  .foot a { color: #FBFAF7; text-decoration: none; font-size: 0.9rem; opacity: 0.85; }
-  .foot a:hover { opacity: 1; text-decoration: underline; }
-  .foot__brand p { color: #9A948B; font-size: 0.85rem; margin: 0.9rem 0 0; max-width: 28ch; }
-  .subscribe-form { display: flex; gap: 0.5rem; max-width: 24rem; }
-  .subscribe-form input { flex: 1; min-width: 0; background: transparent; border: 1px solid rgba(251,250,247,0.25); border-radius: var(--sc-r-pill); padding: 0.55rem 1rem; color: #FBFAF7; }
-  .subscribe-form input::placeholder { color: #9A948B; }
-  .subscribe-form button { background: #FBFAF7; color: #1A1917; border: 0; border-radius: var(--sc-r-pill); padding: 0.55rem 1rem; font-weight: 500; cursor: pointer; }
-  .subscribe-form button:active { transform: scale(0.97); }
-  .foot__legal { grid-column: 1 / -1; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid rgba(251,250,247,0.12); font-family: var(--sc-font-mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: #9A948B; }
-  @media (max-width: 860px) {
-    .close__stage { padding-inline: var(--sc-4); }
-    .close__card { min-height: 46vh; }
-    .foot { grid-template-columns: 1fr 1fr; gap: 1.5rem; padding-inline: 1.25rem; }
-    .foot__brand, .foot__sub { grid-column: 1 / -1; }
-  }
+  .store small { display: block; font-size: 10px; letter-spacing: .04em; line-height: 1; opacity: .75; }
+  .store b { display: block; font-size: 16px; font-weight: 600; line-height: 1.1; letter-spacing: -.01em; }
+  .close__fine { margin-top: 1.2rem; font-size: 13px; color: var(--sc-ink-soft); }
+  .close__phone { width: min(300px, 70%); margin: 0 auto; transform: rotate(-4deg); }
 
-  /* --------------------------------------------- the rail (signature) -- */
-  .rail {
-    position: fixed; inset: auto 0 0 0; z-index: var(--sc-z-chrome);
-    height: calc(var(--gi-rail-h) + env(safe-area-inset-bottom, 0px));
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-    display: grid; grid-template-columns: auto 1fr;
-    background: color-mix(in oklab, var(--sc-canvas) 88%, transparent);
-    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
-    border-top: 1px solid var(--gi-hair);
-    color: var(--sc-ink);
-    transition: opacity 220ms var(--sc-ease-out), transform 260ms var(--sc-ease-out), background 260ms var(--sc-ease-out);
-  }
-  .rail.is-up { opacity: 0; transform: translate3d(0, 100%, 0); pointer-events: none; }
-  .rail.is-off { display: none; }
-  .rail__read { display: flex; align-items: center; gap: 0.7rem; padding-inline: var(--sc-gutter) 1.2rem; border-right: 1px solid var(--gi-hair); white-space: nowrap; }
-  .rail__v { font-family: var(--sc-font-display); font-size: 1.6rem; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; min-width: 2.4ch; }
-  .rail__a { color: var(--sc-accent); font-size: 1.15rem; line-height: 1; }
-  .rail__meta { display: grid; font-family: var(--sc-font-mono); font-size: 0.62rem; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.35; color: var(--sc-ink-soft); }
-  .rail__meta b { font-weight: 500; color: var(--sc-ink); }
-  .rail__track { position: relative; min-width: 0; }
-  .rail__svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-  .rail__svg .band { fill: color-mix(in oklab, var(--sc-accent) 10%, transparent); }
-  .rail__svg .ghost { fill: none; stroke: var(--sc-ink); stroke-opacity: 0.14; stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-  .rail__svg .glu { fill: none; stroke: var(--sc-accent); stroke-width: 2; vector-effect: non-scaling-stroke; }
-  .rail__svg .race { stroke: var(--sc-ink); stroke-opacity: 0.25; stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 2 3; }
-  .rail__svg .head { stroke: var(--sc-ink); stroke-width: 1; vector-effect: non-scaling-stroke; }
-  .rail__svg .dot { fill: var(--sc-accent); stroke: var(--sc-canvas); stroke-width: 2; vector-effect: non-scaling-stroke; }
-  .rail__marks { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
-  .rail__mark { position: absolute; top: 0; bottom: 0; transform: translateX(-50%); white-space: nowrap; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 5px; background: none; border: 0; cursor: pointer; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; gap: 3px; }
-  .rail__mark::before { content: ""; width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid currentColor; background: var(--sc-canvas); }
-  .rail__mark.is-stamped { color: var(--sc-ink); }
-  .rail__mark.is-stamped::before { background: var(--sc-accent); border-color: var(--sc-accent); }
-  .rail__mark:hover { color: var(--sc-ink); }
-  .rail__mark:focus-visible { outline-offset: -3px; }
-  .rail.is-dark { --sc-canvas: #1A1917; --sc-ink: #FBFAF7; --sc-ink-soft: #9A948B; --gi-hair: rgba(251,250,247,0.12); color: #FBFAF7; background: rgba(26,25,23,0.9); }
-  @media (max-width: 860px) {
-    .rail__read { padding-inline: var(--sc-4) 0.7rem; gap: 0.5rem; }
-    .rail__v { font-size: 1.3rem; }
-    .rail__meta { display: none; }
-    .rail__mark { font-size: 0.52rem; letter-spacing: 0.06em; }
-  }
+  /* ---------------------------------------------------------- footer ---- */
+  .foot { margin-top: var(--sc-section); border-top: 1px solid var(--hair); padding-block: 3.5rem 2.5rem; }
+  .foot__top { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem 4rem; }
+  .foot__brand img { width: 26px; height: auto; display: block; }
+  .foot__sub h3 { font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem); font-weight: 500; letter-spacing: -.02em; margin: 1.4rem 0 1rem; max-width: 20ch; line-height: 1.15; }
+  .subscribe-form { display: flex; max-width: 26rem; border: 1px solid var(--hair-2); border-radius: 8px; overflow: hidden; }
+  .subscribe-form input { flex: 1; min-width: 0; background: transparent; border: 0; color: var(--sc-ink); padding: 0 14px; height: 46px; font: 15px var(--sc-font-text); }
+  .subscribe-form input::placeholder { color: var(--sc-ink-soft); }
+  .subscribe-form button { background: transparent; border: 0; border-left: 1px solid var(--hair-2); color: var(--sc-ink); padding: 0 16px; font: 500 14px var(--sc-font-text); cursor: pointer; }
+  .subscribe-form button:hover { background: rgba(251,250,247,.06); }
+  .foot__fine { font-size: 12.5px; color: var(--sc-ink-soft); margin: .8rem 0 0; }
+  .foot__groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 1.5rem; }
+  .foot__groups h4 { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-family: var(--sc-font-mono); font-weight: 500; color: var(--sc-ink-soft); margin: 0 0 .9rem; }
+  .foot__groups ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+  .foot__groups a { color: var(--sc-ink); text-decoration: none; font-size: 14.5px; }
+  .foot__groups a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .foot__legal { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--hair); display: flex; flex-wrap: wrap; gap: .6rem 2rem; font-size: 12.5px; color: var(--sc-ink-soft); }
+  .foot__legal a { color: inherit; }
 
-  .skip { position: absolute; left: -999px; top: 0; z-index: 100; background: var(--sc-ink); color: var(--sc-canvas); padding: 0.5rem 1rem; }
-  .skip:focus { left: var(--sc-gutter); top: 0.5rem; }
+  /* ---------------------------------------------------------- mobile ---- */
+  @media (max-width: 960px) {
+    .bar__links { display: none; }
+    .bar { grid-template-columns: 1fr auto; }
+    .pain__grid, .founder, .close__grid, .foot__top { grid-template-columns: 1fr; }
+    .walk__stage { grid-template-columns: 1fr; align-content: start; padding-top: calc(64px + 28px + env(safe-area-inset-top, 0px)); gap: .9rem; }
+    .walk__copy { display: contents; }
+    .walk__copy h2 { font-size: clamp(1.6rem, 1.2rem + 2vw, 2.2rem); margin: 0; max-width: 20ch; order: 1; }
+    .walk__step { display: none; }
+    .walk__scene { order: 2; height: auto; padding: 0; }
+    .walk__phone { width: min(62vw, 44svh * 760 / 1648); }
+    .walk__stage { gap: .6rem; }
+    .walk .co-list { display: grid; order: 3; }
+    .co { display: none; }
+    .co-list { display: grid; }
+    .race__head { grid-template-columns: 1fr; }
+    .card { width: 150px; padding: 12px 12px; }
+    .card b { font-size: 15px; } .card span { font-size: 12.5px; }
+    .foot__groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .facts div { grid-template-columns: 1fr; gap: .5rem; }
+  }
+  @media (max-width: 700px) {
+    .hero__copy { max-width: none; right: var(--sc-gutter); bottom: 40svh; }
+    .hero__lift { transform: translateY(calc(var(--sc-p, 0) * -12vh)); }
+    .hero__copy h1 { font-size: clamp(2rem, 1.4rem + 3.5vw, 2.6rem); }
+    .hero__copy p { margin: 12px 0 18px; font-size: 1rem; }
+    .hero .hero__phone { width: 36vw; right: 6vw; bottom: -16vh; }
+    .hero__scrim { inset: -10% 0 -40% 0; background: linear-gradient(to top, rgba(23,22,20,.8) 0%, rgba(23,22,20,.8) 34%, rgba(23,22,20,.76) 76%, rgba(23,22,20,.55) 90%, rgba(23,22,20,0) 100%); -webkit-mask-image: none; mask-image: none; }
+    .hero__mist { display: none; }
+    .co-list { gap: .35rem; }
+    .co-list li { font-size: 14px; line-height: 1.35; }
+    .walk .co-list { display: grid; }
+    .walk__note { display: none; }
+    .race__wrap { height: 240px; }
+    .race__stats { flex-wrap: wrap; gap: 1rem 1.6rem; }
+    .race__cards--stack { position: absolute; left: 0; right: 0; top: calc(100% + 44px); display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .race__cards--stack .card { position: static !important; width: auto; padding: 12px 14px; transform: none; }
+    .race__cards--stack .card i { display: none; }
+    .race__cards--stack .card { padding-left: 40px; position: relative !important; }
+    .card .card__n { position: absolute; left: 12px; top: 13px; width: 20px; height: 20px; margin: 0; border-radius: 50%; background: #5BE0A9; color: #171614; font: 600 11px/20px var(--sc-font-text); text-align: center; display: block; }
+    .race__pin { position: absolute; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; background: #5BE0A9; color: #171614; box-shadow: 0 0 0 2px #171614; font: 600 11px/20px var(--sc-font-text); text-align: center; }
+    .race__cards--stack .card b { font-size: 15px; } .race__cards--stack .card span { font-size: 12.5px; }
+    .race { padding-bottom: var(--sc-section); }
+    .race__note { margin-top: 262px; }
+    .fan { height: auto; margin-top: 2rem; }
+    .fan__p { display: none; }
+    .fan__p[data-i="0"], .fan.sc-in .fan__p[data-i="0"] { display: block; position: static; width: 56vw; margin: 0 auto; transform: none; }
+    .close__phone { width: 52vw; }
+    .quote figcaption { width: 100%; }
+    .founder__photo { aspect-ratio: 4 / 3; }
+  }
+  .co-list { display: none; gap: .7rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+  .co-list li { --at: 0; --show: clamp(0, calc((var(--p) - var(--at)) * 14), 1); opacity: calc(.35 + .65 * var(--show)); font-size: 14px; color: var(--sc-ink-soft); padding-left: 16px; position: relative; }
+  .co-list li::before { content: ""; position: absolute; left: 0; top: .5em; width: 7px; height: 7px; border-radius: 50%; background: var(--sc-accent); opacity: var(--show); }
+  .co-list b { color: var(--sc-ink); font-weight: 500; }
 
   @media (prefers-reduced-motion: reduce) {
-    .card__pl, .hero__chip { transform: none !important; }
-    .hero__phone { transform: translateX(-50%) !important; }
-    .peak__panel { transform: none !important; opacity: 1 !important; }
-    .peak__note { transition: none; }
-    .rail { transition: none; }
+    .rot__w { transition: none; }
+    .hero__video { display: none; }
+    .hero__lift, .hero .hero__phone, .hero__mist, .hero__scrim { position: absolute; inset: -30% 0 -40% 0; background: linear-gradient(to right, rgba(23,22,20,.78) 0%, rgba(23,22,20,.7) 36%, rgba(23,22,20,.36) 54%, rgba(23,22,20,0) 68%); -webkit-mask-image: linear-gradient(to top, #000 66%, transparent 96%); mask-image: linear-gradient(to top, #000 66%, transparent 96%); pointer-events: none; transform: translateY(calc(var(--sc-p, 0) * -22vh)); }
+    .scr--detail { transform: none; } .scr--plan { transform: translateX(100%); }
+    .feed-shift { transform: none; }
+    .co, .co-list li { opacity: 1 !important; transform: none !important; }
+    .tap { opacity: 1; transform: none; }
+    .fan__p, .fan.sc-in .fan__p { transition: opacity .3s; }
   }
+  @media (hover: none), (pointer: coarse) { .hero .hero__phone { transform: translate3d(0, calc(var(--sc-p, 0) * -9vh), 0); } }
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+
 <span data-sc-progress></span>
 
-<header class="bar" id="bar">
-  <a class="bar__mark" href="/" aria-label="Glucose Insights home">
-    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="24" fill="none" stroke="currentColor" stroke-width="16"/><circle cx="20" cy="86" r="8" fill="currentColor"/><rect x="38" y="78" width="46" height="16" rx="8" fill="currentColor"/></svg>
-    <span>Glucose Insights</span>
-  </a>
+<header class="bar">
+  <a class="bar__mark" href="/" aria-label="Glucose Insights home"><img src="assets/mark-ink.png" width="22" height="29" alt="">Glucose Insights</a>
   <nav class="bar__links" aria-label="Site">
-    <a href="#how">How it works</a>
-    <a href="#during">See it work</a>
-    <a href="#after">The app</a>
+    <a href="#features">How it works</a>
     <a href="blog.html">Blog</a>
+    <a href="support.html">Support</a>
   </nav>
-  <div class="bar__cta"><a class="gi-cta" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a></div>
+  <div class="bar__cta"><a class="btn btn--ink" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a></div>
 </header>
 
-<main id="main">
+<main id="top">
 
-  <!-- 1 · BEFORE: the hero card. Dawn planes behind sharp product. -->
-  <section class="hero" id="before" data-sc-act="pin" data-sc-span="1.25" aria-label="Introduction">
-    <div data-sc-stage class="hero__stage" id="heroStage">
-      <div class="card hero__card">
-        <div class="card__bg" aria-hidden="true">
-          <img class="card__pl card__pl--sky" src="assets/dawn-sky.webp" width="1800" height="1200" alt="" fetchpriority="high" decoding="async">
-          <img class="card__pl card__pl--hills" src="assets/dawn-hills.webp" width="1800" height="1200" alt="" decoding="async">
-          <img class="card__pl card__pl--ground" src="assets/dawn-ground.webp" width="1800" height="1200" alt="" decoding="async">
-          <div class="card__vignette"></div>
-        </div>
-        <div class="hero__copy" data-sc-cue="0 0.9 0">
-          <p class="gi-eyebrow">For Type 1 athletes</p>
-          <h1 class="gi-display gi-display--xl">See what your glucose does when you <em>run</em>.</h1>
-          <p class="gi-lede">Your CGM, lined up against every workout. Before, during and after, so you learn from your own body instead of guessing.</p>
-          <a class="gi-cta" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a>
-          <p class="gi-fine">Free · iOS and Android · Syncs on its own</p>
-        </div>
-        <div class="hero__floor" aria-hidden="true"></div>
-        <div class="hero__chip" aria-hidden="true"><span class="chip"><b id="heroV">8.6</b><i id="heroA">→</i><s>mmol/L</s><span id="heroT">on the start line</span></span></div>
-        <p class="hero__note gi-fine" data-sc-cue="0.55 0.98">Málaga Marathon 2025 · Peter's own race · 94% in range</p>
-      </div>
-      <div class="hero__phone" aria-hidden="true">
-        <div class="phone"><img src="images/app/detail.webp" width="760" height="1648" alt="" decoding="async"></div>
-      </div>
+  <!-- 1 · RECOGNITION: pin, the road loop, phone plane, copy at its own rate -->
+  <section class="hero" data-sc-act="pin" data-sc-span="1.5" aria-label="Introduction">
+    <div data-sc-stage class="hero__stage" data-sc-spotlight>
+      <img class="hero__poster" src="assets/hero-poster-kling.webp" width="1920" height="1080" alt="A quiet country road at first light, mist in the valley.">
+      <video class="hero__video" muted loop playsinline preload="none" poster="assets/hero-poster-kling.webp" aria-hidden="true"
+             data-src="assets/hero-loop-kling.mp4" data-src-mobile="assets/hero-loop-kling-m.mp4"></video>
+      <div class="hero__mist" aria-hidden="true"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__phone phone phone--soft" aria-hidden="true"><div class="phone__screen"><img src="assets/screen-detail.webp" width="760" height="1648" alt=""></div></div>
+      <div class="hero__lift"><div class="hero__copy" data-sc-cue="0 0.86 0 0.4">
+        <p class="hero__eyebrow">For athletes with Type 1 diabetes</p>
+        <h1>Keep the gels.<br>Lose the guesswork.</h1>
+        <p>Turn trial and error into insights that are yours. Every session you've done, with your glucose and insulin under it, learned from over time. Free on iOS and Android.</p>
+        <a class="btn btn--paper" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a>
+      </div></div>
+      <button class="hero__pause" type="button" aria-pressed="false" aria-label="Pause background video">
+        <svg class="i-pause" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><rect x="2" y="1" width="3" height="10" rx="1"/><rect x="7" y="1" width="3" height="10" rx="1"/></svg>
+        <svg class="i-play" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M3 1.5v9l7-4.5z"/></svg>
+      </button>
     </div>
   </section>
 
-  <!-- works with -->
-  <section class="sec sec--tight" aria-label="Integrations">
-    <div class="sc-wrap gi-center" data-sc-in>
-      <p class="gi-eyebrow">Syncs from</p>
-      <div class="works">
-        <span class="works__logo"><img src="images/dexcom.png" alt="" width="22" height="22">Dexcom</span>
-        <span class="works__logo"><img src="images/nightscout.svg" alt="" width="22" height="22">Nightscout</span>
-        <span class="works__logo"><img src="images/apple-health-heart.svg" alt="" width="22" height="22">Apple Health</span>
-        <span class="works__logo"><img src="images/strava-svgrepo-com.svg" alt="" width="22" height="22">Strava</span>
-        <span class="works__logo"><img src="images/glooko.svg" alt="" width="22" height="22">Glooko</span>
-        <span class="works__logo"><img src="images/tandem.svg" alt="" width="22" height="22">Tandem</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 2 · BEFORE: the guesswork. -->
-  <section class="sec" id="guess" data-sc-act="flow" aria-labelledby="guess-h">
-    <div class="sc-wrap" data-sc-in data-sc-stagger="90">
-      <div class="sec__head">
-        <p class="gi-eyebrow">Before the gun</p>
-        <h2 class="gi-display gi-display--lg" id="guess-h">Every run starts with a <em>guess</em>.</h2>
-      </div>
-      <ul class="guess__lines">
-        <li>Half a banana, or the whole thing?</li>
-        <li>Cut basal by thirty percent. Or fifty. Or suspend.</li>
-        <li>Arrow up. Arrow down. Go anyway.</li>
-        <li>Tuesday spiked. Thursday didn't. Same breakfast.</li>
-      </ul>
-      <p class="gi-body guess__turn">Thirty years in, it is still trial and error. <strong>The trials are the only data you have.</strong> Keep them, and read them.</p>
-    </div>
-  </section>
-
-  <!-- how it works -->
-  <section class="sec" id="how" data-sc-act="flow" aria-labelledby="how-h">
+  <!-- 2 · UNEASE: flow, his words, no image -->
+  <section class="g-paper pain" data-sc-act="flow" aria-labelledby="pain-h">
     <div class="sc-wrap">
-      <div class="sec__head" data-sc-in>
-        <p class="gi-eyebrow">How it works</p>
-        <h2 class="gi-display gi-display--lg" id="how-h">Connect once. <em>Train</em> as normal.</h2>
-        <p class="gi-lede">The app captures glucose alongside every session in the background. Nothing to log, nothing to remember.</p>
-      </div>
-      <div class="steps" data-sc-in data-sc-stagger="110">
-        <article class="step">
-          <div class="step__vis">
-            <img class="bg" src="assets/dawn.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-            <div class="step__chips" aria-hidden="true">
-              <span><img src="images/dexcom.png" alt="">Dexcom</span><span><img src="images/strava-svgrepo-com.svg" alt="">Strava</span><span><img src="images/apple-health-heart.svg" alt="">Apple Health</span><span><img src="images/nightscout.svg" alt="">Nightscout</span><span><img src="images/glooko.svg" alt="">Glooko</span><span><img src="images/tandem.svg" alt="">Tandem</span>
-            </div>
-          </div>
-          <div class="step__body"><p class="gi-fine">01 · Connect</p><h3>Link your sources</h3><p>Strava, Apple Health, Dexcom or Nightscout. Activity and glucose sync automatically.</p></div>
-        </article>
-        <article class="step">
-          <div class="step__vis"><img class="photo" src="assets/sensor-check.webp" width="1200" height="1500" alt="Peter checking the CGM sensor on his stomach before a run" loading="lazy" decoding="async"></div>
-          <div class="step__body"><p class="gi-fine">02 · Train</p><h3>Run as you always do</h3><p>No extra steps, no extra devices. The sensor you already wear does the work.</p></div>
-        </article>
-        <article class="step">
-          <div class="step__vis">
-            <img class="bg" src="assets/dawn.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-            <div class="step__spark" aria-hidden="true"><p class="gi-fine" style="margin:0">Málaga Marathon · 94% in range</p><svg id="sparkSvg" viewBox="0 0 300 110" preserveAspectRatio="none"></svg></div>
-          </div>
-          <div class="step__body"><p class="gi-fine">03 · Discover</p><h3>See the pattern</h3><p>Overlay glucose on any activity, compare repeated efforts, learn what works for your body.</p></div>
-        </article>
-      </div>
-    </div>
-    <div class="guess__breath" aria-hidden="true"></div>
-  </section>
-
-  <!-- 3 · DURING: the overlay. The peak. -->
-  <section id="during" data-sc-act="pin" data-sc-span="4.4" aria-labelledby="peak-h">
-    <div data-sc-stage class="peak__stage" id="peakStage">
-      <div class="peak__head">
-        <p class="gi-eyebrow">See it work · Málaga Marathon, 14 December 2025</p>
-        <h2 class="gi-display gi-display--lg" id="peak-h">Watch a run become a <em>pattern</em>.</h2>
-      </div>
-      <div class="card peak__card" id="peakCard">
-        <div class="card__bg" aria-hidden="true">
-          <img class="card__pl card__pl--sky" src="assets/dawn-sky.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-          <img class="card__pl card__pl--hills" src="assets/dawn-hills.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-          <img class="card__pl card__pl--ground" src="assets/dawn-ground.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-          <div class="card__vignette"></div>
+      <div class="pain__grid" data-sc-in data-sc-stagger="90">
+        <h2 id="pain-h" class="sc-display" aria-label="Same workout. Same time of day. Same fuelling strategy. Different outcome."><span aria-hidden="true">Same <span class="rot" data-rot><span class="rot__w is-on">workout.</span><span class="rot__w">time of day.</span><span class="rot__w">fuelling strategy.</span></span><br>Different outcome.</span></h2>
+        <div class="pain__lines">
+          <p>Your endo says exercise matters.</p>
+          <p>Nobody gives you the manual.</p>
+          <p>So it's trial and error, and a hypo when you get it wrong.</p>
+          <p>There has to be a better way.</p>
         </div>
-        <div class="peak__grid">
-          <aside class="peak__aside">
-            <svg class="peak__route" viewBox="-4 -4 108 108" aria-hidden="true"><path id="routeGhost" d=""/><path id="routeDrawn" class="is-drawn" d="" pathLength="1"/></svg>
-            <div class="peak__noteslot" id="peakNotes"></div>
-          </aside>
-          <div class="peak__panel" id="peakWrap">
-            <div class="peak__paneltop">
-              <span class="t">Peter's Dexcom G7, the hour before to the hour after</span>
-              <div class="peak__legend" aria-hidden="true"><span><i style="background:var(--sc-accent)"></i>Glucose</span><span><i style="background:var(--gi-hr)"></i>Heart rate</span><span><i style="background:rgba(26,25,23,.4);height:8px"></i>Km splits</span><span><i style="background:color-mix(in oklab, var(--sc-accent) 18%, transparent);height:10px"></i>In range</span></div>
-            </div>
-            <svg class="peak__chart" id="peakChart" viewBox="0 0 1000 420" preserveAspectRatio="none" role="img" aria-labelledby="peakChartTitle">
-              <title id="peakChartTitle">Glucose in mmol/L, heart rate and kilometre splits across the Málaga Marathon, drawn as you scroll</title>
-            </svg>
-            <div class="peak__readout" id="peakReadout" aria-live="off"><span class="chip"><b id="peakV">8.6</b><i id="peakA">→</i><s>mmol/L</s><span id="peakT">−1:00</span><span id="peakK">0.0 km</span><span id="peakH"></span></span></div>
-          </div>
-        </div>
+      </div>
+      <div class="works" data-sc-in>
+        <span class="works__label">Works with</span>
+        <div class="works__track" aria-label="Works with Dexcom, Nightscout, Apple Health, Strava, Glooko and Tandem Diabetes Care"><ul class="works__list"><li><span class="lg lg--dexcom" role="img" aria-label="Dexcom"></span></li><li><span class="lg lg--ns" aria-hidden="true"></span>Nightscout</li><li><span class="lg lg--ah" aria-hidden="true"></span>Apple Health</li><li><span class="lg lg--strava" role="img" aria-label="Strava"></span></li><li><span class="lg lg--glooko" role="img" aria-label="Glooko"></span></li><li><span class="lg lg--tandem" role="img" aria-label="Tandem Diabetes Care"></span></li></ul><ul class="works__list" aria-hidden="true"><li><span class="lg lg--dexcom"></span></li><li><span class="lg lg--ns"></span>Nightscout</li><li><span class="lg lg--ah"></span>Apple Health</li><li><span class="lg lg--strava"></span></li><li><span class="lg lg--glooko"></span></li><li><span class="lg lg--tandem"></span></li></ul></div>
       </div>
     </div>
   </section>
 
-  <!-- 4 · AFTER: what the app shows. A rail of real screens. -->
-  <span id="features"></span>
-  <section id="after" data-sc-act="pan" data-sc-span="3.2" aria-labelledby="screens-h">
-    <div data-sc-stage class="screens__stage">
-      <div class="screens__rail" data-sc-pan="0.05" id="screensRail">
-        <div class="screens__lead">
-          <p class="gi-eyebrow" style="margin-left:-0.6em">The app</p>
-          <h2 class="gi-display gi-display--lg" id="screens-h">Everything in <em>one</em> place.</h2>
-          <p class="gi-body">No more app-switching. Every session arrives with the glucose that went with it, and the app reads it for you.</p>
-        </div>
-        <article class="screen">
-          <div class="phone"><img src="images/app/activities.webp" width="760" height="1648" alt="Activities screen listing runs with a route thumbnail, pace, heart rate and time in range for each" loading="lazy" decoding="async"></div>
-          <dl><dt>Activities</dt><dd>Every run, ride and swim, with time in range beside it.</dd></dl>
-        </article>
-        <article class="screen">
-          <div class="phone"><img src="images/app/detail.webp" width="760" height="1648" alt="Activity detail screen with the route map and the glucose trace across the session" loading="lazy" decoding="async"></div>
-          <dl><dt>Activity detail</dt><dd>Glucose over the route. Before, during and after.</dd></dl>
-        </article>
-        <article class="screen">
-          <div class="phone"><img src="images/app/plan.webp" width="760" height="1648" alt="Plan Workout screen with current glucose, trend arrow, activity type and planned duration" loading="lazy" decoding="async"></div>
-          <dl><dt>Plan with hindsight</dt><dd>Enter glucose, trend and the session. See what happened last time you started here.</dd></dl>
-        </article>
-        <article class="screen">
-          <div class="phone"><img src="images/app/insulin.webp" width="760" height="1648" alt="Insulin screen showing total daily dose per kilogram and a bar chart of daily doses" loading="lazy" decoding="async"></div>
-          <dl><dt>Insulin</dt><dd>Daily dose and sensitivity against your training load.</dd></dl>
-        </article>
-        <div class="screens__end">
-          <p class="gi-lede">Free, on iPhone and Android.</p>
-          <a class="gi-cta" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a>
-        </div>
+  <!-- 3 · CLARITY (peak): pin, the app walks itself. Signature move. -->
+  <section id="features" class="g-ink walk" data-sc-act="pin" data-sc-span="3.4" aria-labelledby="walk-h">
+    <div data-sc-stage class="walk__stage">
+      <div class="walk__copy">
+        <h2 id="walk-h" class="sc-display">Every session, with the glucose under it.</h2>
+        <p class="walk__step" data-sc-cue="0 0.30 0"><b>Your sessions, as they happened.</b>Synced from Strava or Apple Health. Each one shows time in range and the glucose line before you open it.</p>
+        <p class="walk__step" data-sc-cue="0.30 0.52"><b>Open one.</b>The whole session, with the glucose before it and after it. Not just the workout window.</p>
+        <p class="walk__step" data-sc-cue="0.52 0.80"><b>The route, coloured by glucose.</b>Green in range, amber high, coral low. Heart rate alongside when you want it.</p>
+        <p class="walk__step" data-sc-cue="0.80"><b>Then plan the next one.</b>Set the activity, the duration and where your glucose is now. The app finds the sessions that looked like today.</p>
+        <ul class="co-list" aria-hidden="true">
+          <li style="--at:.12"><b>Lunch Run.</b> 67% in range.</li>
+          <li style="--at:.40"><b>Time in range</b> for the whole session.</li>
+          <li style="--at:.52"><b>The route,</b> coloured by glucose.</li>
+          <li style="--at:.66"><b>Glucose and heart rate,</b> by time or distance.</li>
+          <li style="--at:.93"><b>Find similar situations.</b></li>
+        </ul>
       </div>
+      <div class="walk__scene">
+        <div class="walk__phone phone">
+          <div class="phone__screen">
+            <img class="feed-shift" src="assets/screen-activities.webp" width="760" height="1648" alt="Activities feed: evening, morning, afternoon and lunch runs, each with time in range and a glucose sparkline.">
+            <div class="tap" aria-hidden="true"></div>
+            <img class="scr--detail" src="assets/screen-detail.webp" width="760" height="1648" alt="Lunch Run: 67% time in range, 7:03 per mile, 155 bpm, 53:40, route map coloured by glucose, glucose chart.">
+            <img class="scr--plan" src="assets/screen-plan.webp" width="760" height="1648" alt="Plan Workout: current glucose, trend arrow, activity, planned duration, insulin on board, Find Similar Situations.">
+          </div>
+        </div>
+        <div class="co co--l co--1" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>67% in range</b><small>For the whole session, warm-up and recovery included.</small></div>
+        <div class="co co--r co--2" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>The route, coloured by glucose</b><small>Where it went high, where it held.</small></div>
+        <div class="co co--l co--3" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>Glucose against time or distance</b><small>Heart rate on the same axis.</small></div>
+        <div class="co co--r co--4" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>Find similar situations</b><small>Plan from the sessions that started like this one.</small></div>
+      </div>
+      <p class="walk__note">Real screens, iOS 1.5. Not medical advice.</p>
     </div>
   </section>
 
-  <!-- 5 · AFTER: who built it, and the one real review. -->
-  <section class="sec" id="founder" data-sc-act="flow" aria-labelledby="founder-h">
+  <!-- 4 · TRUST: reveal, one real marathon -->
+  <section class="g-ink race sc-section" data-sc-act="flow" aria-labelledby="race-h">
     <div class="sc-wrap">
-      <div class="sec__head" data-sc-in>
-        <p class="gi-eyebrow">Who built it</p>
-        <h2 class="gi-display gi-display--lg" id="founder-h">Built by a runner who has done the <em>guessing</em>.</h2>
+      <div class="race__head" data-sc-in data-sc-stagger="80">
+        <h2 id="race-h" class="sc-display">One real marathon, glucose included.</h2>
+        <div class="race__stats">
+          <div><b>2:48:12</b><span>Málaga, Dec 2025</span></div>
+          <div><b>162</b><span>Avg heart rate</span></div>
+          <div><b>93.9%</b><span>Time in range</span></div>
+        </div>
       </div>
-      <div class="founder" data-sc-in data-sc-stagger="80">
-        <figure class="founder__fig">
-          <img src="assets/founder.webp" width="1200" height="1500" alt="Peter mid-race in a Diabetes UK vest, fist raised, among other runners on a wet city street" loading="lazy" decoding="async">
-          <figcaption class="gi-small">Peter, Diabetes UK vest, on the way to a 2:39.</figcaption>
+      <div class="race__wrap" id="raceBoard">
+        <div class="race__board" data-sc-reveal="left" data-sc-reveal-at="0.12 0.62">
+          <svg class="race__chart" id="raceChart" viewBox="0 0 1000 400" preserveAspectRatio="none" role="img" aria-label="Glucose in mmol/L and heart rate across the marathon, from the gun to the finish."></svg>
+        </div>
+        <div id="raceLabels" class="race__labels" aria-hidden="true"></div>
+        <div id="raceCards" data-sc-in data-sc-stagger="140"></div>
+      </div>
+      <p class="race__note">Peter's own race, exported from the app. Glucose in mmol/L from his CGM, heart rate from his watch, shaded band is 3.9 to 10. His data is already public on the <a href="blog.html">blog</a>. Not medical advice.</p>
+    </div>
+  </section>
+
+  <!-- 5 · CONFIDENCE: flow, the screens fan out -->
+  <section class="g-paper fan-sec sc-section" data-sc-act="flow" aria-labelledby="fan-h">
+    <div class="sc-wrap">
+      <div data-sc-in data-sc-stagger="80">
+        <h2 id="fan-h" class="sc-display">What the app shows you.</h2>
+        <p class="lede">Five screens. Every number on them comes from your own devices.</p>
+      </div>
+      <div class="fan" data-sc-in aria-hidden="true">
+        <div class="fan__p" data-i="-2"><img src="assets/screen-insulin.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="-1"><img src="assets/screen-activities.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="0"><img src="assets/screen-detail.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="1"><img src="assets/screen-plan.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="2"><img src="assets/screen-settings.webp" width="760" height="1648" alt=""></div>
+      </div>
+      <div class="facts" data-sc-in data-sc-stagger="70">
+        <div><span class="chip">Activities</span><p>Every session from Strava or Apple Health, with time in range and the glucose line on the card. Runs, rides, swims, walks, ski days.</p></div>
+        <div><span class="chip">Plan</span><p>Pick the activity and duration, set where your glucose is and which way it's heading. The app finds the sessions that matched and shows what happened.</p></div>
+        <div><span class="chip">Insulin</span><p>Daily totals from Glooko or your pump, basal and bolus split, insulin on board when you plan.</p></div>
+        <div><span class="chip">Connections</span><p>Dexcom, Nightscout, Apple Health, Strava, Glooko, Tandem t:slim. Connect once, then it's automatic.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · WARMTH: reveal + count, built by an athlete -->
+  <section class="g-paper sc-section" data-sc-act="flow" aria-labelledby="founder-h" style="padding-top: 0">
+    <div class="sc-wrap">
+      <div class="founder">
+        <figure class="founder__photo" data-sc-reveal="up" data-sc-reveal-at="0.10 0.55" style="margin:0">
+          <img src="assets/founder-marathon.webp" width="1800" height="1200" alt="Peter mid-race, arm raised, on a wet road.">
         </figure>
-        <div class="founder__copy">
-          <p class="gi-body">I have lived with Type 1 for over thirty years. We are told exercise is critical for managing it, and there is no instruction manual. For most of us it is trial and error, and because the condition is so personal, you cannot learn much from anyone but yourself.</p>
-          <p class="gi-body">Over time, patterns emerge. Seeing your own data lets you find them faster, iterate quicker and stop guessing. That is why I built Glucose Insights. Whether you are lacing up for a first 5K or a tenth ultra, it can help you get there.</p>
-          <p class="founder__sig">Peter, founder</p>
+        <div data-sc-in data-sc-stagger="80">
+          <h2 id="founder-h" class="sc-display">Built by an athlete with Type 1.</h2>
+          <p>I've had Type 1 for thirty years. I run marathons and race triathlon for GB in my age group. I built Glucose Insights because I wanted to see my glucose against my training instead of guessing, and nothing did that. Every session I log makes the next one easier to plan.</p>
           <div class="founder__nums">
-            <div><b class="gi-mono"><span data-sc-count="0 30">0</span></b><span>years with Type 1</span></div>
-            <div><b>2:39</b><span>marathon best</span></div>
-            <div><b>3×</b><span>GB age-group triathlete</span></div>
+            <div><b><span data-sc-count="0 30" data-sc-count-ms="1400">0</span> years</b><span>With Type 1</span></div>
+            <div><b>2:39</b><span>Marathon</span></div>
+            <div><b>3×</b><span>GB age group</span></div>
           </div>
         </div>
       </div>
-      <div class="love" data-sc-in data-sc-stagger="80">
-        <blockquote class="love__quote">
-          <p>“It's a game-changer for my learning and improvement. The app offers a <mark>personal, at-a-glance overview</mark> of all the important metrics.”</p>
-          <footer>Type 1 marathon runner · App Store review</footer>
-        </blockquote>
-        <div class="love__tile">
-          <svg viewBox="0 0 100 100" width="28" height="28" aria-hidden="true"><circle cx="50" cy="38" r="24" fill="none" stroke="currentColor" stroke-width="16"/><circle cx="20" cy="86" r="8" fill="currentColor"/><rect x="38" y="78" width="46" height="16" rx="8" fill="currentColor"/></svg>
-          <p class="gi-display">Used by 100+ Type 1 athletes.</p>
-          <a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free →</a>
-        </div>
-      </div>
+      <figure class="quote" data-sc-in>
+        <blockquote><span class="qm qm--open" aria-hidden="true">“</span>It's a game-changer for my learning and improvement. The app offers a personal, at-a-glance overview of all the important metrics.<span class="qm" aria-hidden="true">”</span></blockquote>
+        <figcaption><i aria-hidden="true"></i><span><b><a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Type 1 marathon runner</a></b>, App Store review</span></figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- 6 · NEXT RUN: the close card, then the footer. Holds. -->
-  <section id="next" data-sc-act="pin" data-sc-span="1.2" aria-labelledby="next-h">
-    <div data-sc-stage class="close__stage">
-      <div class="card close__card" id="closeCard">
-        <div class="card__bg" aria-hidden="true">
-          <img class="card__pl card__pl--sky" src="assets/dawn-sky.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-          <img class="card__pl card__pl--hills" src="assets/dawn-hills.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-          <img class="card__pl card__pl--ground" src="assets/dawn-ground.webp" width="1800" height="1200" alt="" loading="lazy" decoding="async">
-          <div class="card__vignette"></div>
-        </div>
-        <div class="close__inner" data-sc-cue="0 1 0 0">
-          <p class="gi-eyebrow">Next run</p>
-          <h2 class="gi-display gi-display--lg" id="next-h">Run the next one with <em>hindsight</em>.</h2>
-          <div class="close__stores">
+  <!-- 7 · RESOLVE: flow, static, the close and the footer on the same ink -->
+  <section id="download" class="g-ink close" data-sc-act="flow" aria-labelledby="close-h">
+    <div class="sc-wrap">
+      <div class="close__grid" data-sc-in data-sc-stagger="90">
+        <div>
+          <h2 id="close-h" class="sc-display">Plan the next session from the ones that went right.</h2>
+          <div class="stores">
             <a class="store" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
               <div><small>Download on the</small><b>App Store</b></div>
@@ -628,249 +519,45 @@
               <div><small>Get it on</small><b>Google Play</b></div>
             </a>
           </div>
-          <p class="gi-fine">Free to download · Patterns from your first synced workout</p>
+          <p class="close__fine">Made for people with Type 1 diabetes who train. Free to download. Your data stays on your devices and your accounts.</p>
         </div>
+        <div class="close__phone phone"><div class="phone__screen"><img src="assets/screen-similar.webp" width="760" height="1648" alt="Similar Situations: ten sessions that matched, each with time in range, insulin, the glucose line and the route."></div></div>
       </div>
+
       <footer class="foot">
-        <div class="foot__brand">
-          <a class="bar__mark" href="/" aria-label="Glucose Insights home"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="24" fill="none" stroke="currentColor" stroke-width="16"/><circle cx="20" cy="86" r="8" fill="currentColor"/><rect x="38" y="78" width="46" height="16" rx="8" fill="currentColor"/></svg><span>Glucose Insights</span></a>
-          <p>Data-driven exercise for people with Type 1. Not medical advice.</p>
+        <div class="foot__top">
+          <div class="foot__brand">
+            <img src="assets/mark-paper.png" width="26" height="34" alt="Glucose Insights">
+            <div class="foot__sub">
+              <h3>Notes on training with Type 1, occasionally.</h3>
+              <form class="subscribe-form" aria-label="Subscribe to updates" action="https://glucoseinsights.us22.list-manage.com/subscribe/post?u=b09e085a8d2f566b9138d4dc8&amp;id=d4c6ab5867" method="post" target="_blank">
+                <label for="subEmail" style="position:absolute;left:-999px">Email</label>
+                <input id="subEmail" type="email" name="EMAIL" placeholder="Email address" required autocomplete="email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <p class="foot__fine">No spam. Unsubscribe any time. See the <a href="privacy-policy.html" style="color:inherit">privacy policy</a>.</p>
+            </div>
+          </div>
+          <div class="foot__groups">
+            <div><h4>Product</h4><ul><li><a href="#features">How it works</a></li><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+            <div><h4>Get the app</h4><ul><li><a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.gluchose" target="_blank" rel="noopener">Google Play</a></li></ul></div>
+            <div><h4>Company</h4><ul><li><a href="mailto:help@glucoseinsights.com">Contact</a></li><li><a href="blog.html">Founder's notes</a></li></ul></div>
+            <div><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy</a></li><li><a href="terms-conditions.html">Terms</a></li></ul></div>
+          </div>
         </div>
-        <div><h4>Product</h4><ul><li><a href="#after">The app</a></li><li><a href="#how">How it works</a></li><li><a href="blog.html">Blog</a></li><li><a href="support.html">Support</a></li></ul></div>
-        <div><h4>Company</h4><ul><li><a href="privacy-policy.html">Privacy</a></li><li><a href="terms-conditions.html">Terms</a></li><li><a href="mailto:help@glucoseinsights.com">help@glucoseinsights.com</a></li></ul></div>
-        <div class="foot__sub"><h4>Stay in the loop</h4>
-          <form class="subscribe-form" aria-label="Subscribe to updates">
-            <label for="subEmail" style="position:absolute;left:-999px">Email</label>
-            <input id="subEmail" type="email" name="EMAIL" placeholder="your@email.com" required autocomplete="email">
-            <button type="submit">Subscribe</button>
-          </form>
+        <div class="foot__legal">
+          <span>© 2026 Quantably Ltd</span>
+          <span>Glucose Insights is made for people with Type 1 diabetes. It is not a medical device and does not give medical advice.</span>
         </div>
-        <div class="foot__legal"><span>© 2026 Quantably Ltd</span><span>Built for athletes with Type 1</span></div>
       </footer>
     </div>
   </section>
 
 </main>
 
-<!-- The run rides the bottom of the page. -->
-<aside class="rail" id="rail" aria-label="Peter's Málaga Marathon glucose trace, your position on the page">
-  <div class="rail__read">
-    <span class="rail__v gi-mono" id="railV">8.6</span>
-    <span class="rail__a" id="railA" aria-hidden="true">→</span>
-    <span class="rail__meta"><b id="railT">1:00 to the gun</b><span id="railK">Málaga Marathon</span></span>
-  </div>
-  <div class="rail__track">
-    <svg class="rail__svg" id="railSvg" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true"></svg>
-    <ol class="rail__marks" id="railMarks"></ol>
-  </div>
-</aside>
-
 <script src="scrollcraft.js"></script>
 <script src="js/subscribe.js" defer></script>
-<script>
-ScrollCraft.mount(document.body);
-
-/* ==========================================================================
-   The Logbook: page-local code. The page is one run. Scroll is the playhead.
-   Reads scroll position and the peak act's geometry; the engine is untouched.
-   ======================================================================== */
-(function () {
-  'use strict';
-  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
-
-  /* --- pointer depth on the scene cards, fine pointers only ------------- */
-  if (fine && !reduce) {
-    Array.prototype.forEach.call(document.querySelectorAll('#heroStage, #peakCard, #closeCard'), function (st) {
-      var tx = 0, ty = 0, cx = 0, cy = 0, raf = 0;
-      function tick() {
-        cx += (tx - cx) * 0.08; cy += (ty - cy) * 0.08;
-        st.style.setProperty('--gi-mx', cx.toFixed(3)); st.style.setProperty('--gi-my', cy.toFixed(3));
-        raf = (Math.abs(tx - cx) > 0.001 || Math.abs(ty - cy) > 0.001) ? requestAnimationFrame(tick) : 0;
-      }
-      st.addEventListener('pointermove', function (e) { var r = st.getBoundingClientRect(); tx = (e.clientX - r.left) / r.width - 0.5; ty = (e.clientY - r.top) / r.height - 0.5; if (!raf) raf = requestAnimationFrame(tick); });
-      st.addEventListener('pointerleave', function () { tx = 0; ty = 0; if (!raf) raf = requestAnimationFrame(tick); });
-    });
-  }
-
-  /* --- the run --------------------------------------------------------- */
-  var $ = function (id) { return document.getElementById(id); };
-  var rail = $('rail'), railSvg = $('railSvg'), railV = $('railV'), railA = $('railA'), railT = $('railT'), railK = $('railK');
-  var peak = $('during'), peakWrap = $('peakWrap'), chart = $('peakChart'), readout = $('peakReadout');
-  var pV = $('peakV'), pA = $('peakA'), pT = $('peakT'), pK = $('peakK'), pH = $('peakH');
-  var hV = $('heroV'), hA = $('heroA'), hT = $('heroT');
-  var notesEl = $('peakNotes');
-  var ARROW = { Flat: '→', FortyFiveUp: '↗', SingleUp: '↑', DoubleUp: '⇈', FortyFiveDown: '↘', SingleDown: '↓', DoubleDown: '⇊' };
-  var NS = 'http://www.w3.org/2000/svg';
-  function el(name, attrs, parent) { var n = document.createElementNS(NS, name); for (var k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
-  function pad2(n) { return (n < 10 ? '0' : '') + n; }
-  function fmtT(min) { var s = Math.round(Math.abs(min) * 60), h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60; return h ? h + ':' + pad2(m) + ':' + pad2(sec) : m + ':' + pad2(sec); }
-
-  fetch('assets/malaga.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(init).catch(function (e) { console.error('run data', e); rail.classList.add('is-off'); });
-
-  function init(run) {
-    var G = run.glucose, HR = run.hr, splits = run.splits;
-    var t0 = G[0][0], t1 = G[G.length - 1][0], durMin = run.durationSec / 60, span = t1 - t0;
-    var x = function (t) { return (t - t0) / span * 1000; };
-    var gy = function (v) { return 400 - (Math.min(16, Math.max(2, v)) - 2) / 14 * 300; };
-    var hy = function (b) { return 415 - (Math.min(190, Math.max(80, b)) - 80) / 110 * 130; };
-    var cum = [], acc = 0; splits.forEach(function (s) { acc += s; cum.push(acc / 60); });
-    var glucoseAt = function (t) {
-      if (t <= G[0][0]) return G[0]; if (t >= G[G.length - 1][0]) return G[G.length - 1];
-      for (var i = 1; i < G.length; i++) if (G[i][0] >= t) { var a = G[i - 1], b = G[i], f = (t - a[0]) / (b[0] - a[0]); return [t, a[1] + (b[1] - a[1]) * f, f < 0.5 ? a[2] : b[2]]; }
-      return G[G.length - 1];
-    };
-    var hrAt = function (t) { if (t < 0 || t > durMin) return null; return HR[Math.min(HR.length - 1, Math.max(0, Math.round(t / durMin * (HR.length - 1))))][1]; };
-    var kmAt = function (t) { if (t <= 0) return 0; for (var i = 0; i < cum.length; i++) if (cum[i] >= t) { var prev = i ? cum[i - 1] : 0; return i + (t - prev) / (cum[i] - prev); } return run.distanceM / 1000; };
-    var pathOf = function (pts) { return pts.map(function (p, i) { return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(''); };
-    var gPath = pathOf(G.map(function (g) { return [x(g[0]), gy(g[1])]; }));
-
-    /* rail */
-    railSvg.innerHTML = '';
-    var rGy = function (v) { return 92 - (Math.min(16, Math.max(2, v)) - 2) / 14 * 70; };
-    var rPath = pathOf(G.map(function (g) { return [x(g[0]), rGy(g[1])]; }));
-    el('rect', { class: 'band', x: 0, y: rGy(10), width: 1000, height: rGy(3.9) - rGy(10) }, railSvg);
-    el('line', { class: 'race', x1: x(0), x2: x(0), y1: 0, y2: 100 }, railSvg);
-    el('line', { class: 'race', x1: x(durMin), x2: x(durMin), y1: 0, y2: 100 }, railSvg);
-    el('path', { class: 'ghost', d: rPath }, railSvg);
-    var rClipRect = el('rect', { x: 0, y: 0, width: 0, height: 100 }, el('clipPath', { id: 'railClip' }, el('defs', {}, railSvg)));
-    el('path', { class: 'glu', d: rPath, 'clip-path': 'url(#railClip)' }, railSvg);
-    var rHead = el('line', { class: 'head', x1: 0, x2: 0, y1: 0, y2: 100 }, railSvg);
-    var rDot = el('circle', { class: 'dot', r: 3.5, cx: 0, cy: 50 }, railSvg);
-
-    /* the sparkline in step 03 */
-    var sp = $('sparkSvg');
-    if (sp) {
-      var sy = function (v) { return 104 - (Math.min(16, Math.max(2, v)) - 2) / 14 * 96; };
-      el('rect', { class: 'band', x: 0, y: sy(10), width: 300, height: sy(3.9) - sy(10) }, sp);
-      el('line', { class: 'race', x1: x(0) * 0.3, x2: x(0) * 0.3, y1: 0, y2: 110 }, sp);
-      el('line', { class: 'race', x1: x(durMin) * 0.3, x2: x(durMin) * 0.3, y1: 0, y2: 110 }, sp);
-      el('path', { class: 'glu', d: pathOf(G.map(function (g) { return [x(g[0]) * 0.3, sy(g[1])]; })) }, sp);
-    }
-
-    /* peak chart */
-    Array.prototype.slice.call(chart.childNodes).forEach(function (n) { if (n.nodeName.toLowerCase() !== 'title') chart.removeChild(n); });
-    el('rect', { class: 'band', x: 0, y: gy(10), width: 1000, height: gy(3.9) - gy(10) }, chart);
-    [4, 6, 8, 10, 12, 14].forEach(function (v) { el('line', { class: 'grid', x1: 0, x2: 1000, y1: gy(v), y2: gy(v) }, chart); el('text', { x: 4, y: gy(v) - 4 }, chart).textContent = v; });
-    el('line', { class: 'race', x1: x(0), x2: x(0), y1: 80, y2: 420 }, chart);
-    el('line', { class: 'race', x1: x(durMin), x2: x(durMin), y1: 80, y2: 420 }, chart);
-    el('text', { x: x(0) + 6, y: 96 }, chart).textContent = 'GUN ' + run.gun;
-    el('text', { x: x(durMin) + 6, y: 96 }, chart).textContent = 'FINISH ' + fmtT(durMin);
-    el('text', { x: x(t0) + 4, y: 96 }, chart).textContent = 'ONE HOUR BEFORE';
-    var splitRects = [], maxS = Math.max.apply(null, splits), minS = Math.min.apply(null, splits);
-    for (var i = 0; i < splits.length; i++) {
-      var a = i ? cum[i - 1] : 0, b = cum[i], h = 6 + (1 - (splits[i] - minS) / Math.max(1, maxS - minS)) * 10;
-      splitRects.push(el('rect', { class: 'split', x: x(a) + 0.5, y: 420 - h, width: Math.max(0.5, x(b) - x(a) - 1), height: h }, chart));
-    }
-    var clipRect = el('rect', { x: 0, y: 0, width: 0, height: 420 }, el('clipPath', { id: 'peakClip' }, el('defs', {}, chart)));
-    el('path', { class: 'glu-ghost', d: gPath }, chart);
-    el('path', { class: 'hr', d: pathOf(HR.map(function (h) { return [x(h[0]), hy(h[1])]; })), 'clip-path': 'url(#peakClip)' }, chart);
-    el('path', { class: 'glu', d: gPath, 'clip-path': 'url(#peakClip)' }, chart);
-    var head = el('line', { class: 'head', x1: 0, x2: 0, y1: 80, y2: 420 }, chart);
-    var dot = el('circle', { class: 'dot', r: 6, cx: 0, cy: 0 }, chart);
-
-    /* route */
-    var rd = pathOf(run.route);
-    $('routeGhost').setAttribute('d', rd);
-    var routeDrawn = $('routeDrawn'); routeDrawn.setAttribute('d', rd);
-    routeDrawn.style.strokeDasharray = '1'; routeDrawn.style.strokeDashoffset = '1';
-
-    /* annotations: real moments in the race */
-    var notes = [
-      { at: -30, k: 'Before', text: ['Pump connected for the whole race.', 'A first. Every marathon before this one started with the pump off, on the standard advice.'] },
-      { at: 1, k: 'Gun', text: [glucoseAt(0)[1].toFixed(1) + ' on the line.', 'Four gels, spaced through the race. About 160 g of carbohydrate in under three hours.'] },
-      { at: 36, k: kmAt(39).toFixed(0) + ' km', text: ['Down to ' + glucoseAt(39)[1].toFixed(1) + ' and drifting.', 'The early dip. Nothing to do yet but keep an eye on the arrow.'] },
-      { at: 67, k: kmAt(70).toFixed(0) + ' km', text: ['Rising fast through 9.', 'A micro-bolus of about half a unit, before it runs away. Reactive bolusing at 15 was what sank Valencia.'] },
-      { at: 86, k: kmAt(88).toFixed(0) + ' km', text: ['Back under 10 within fifteen minutes.', 'Same gels, same fitness as the four bad ones. Different strategy.'] },
-      { at: 118, k: kmAt(120).toFixed(0) + ' km', text: ['Holding 9 to 10 through the thirties.', 'The part of a marathon where glucose usually became the story.'] },
-      { at: durMin - 2, k: 'Finish', text: [glucoseAt(durMin)[1].toFixed(1) + ' at the line. ' + run.tir.toFixed(0) + '% in range.', 'The first marathon where glucose was not the story.'] },
-      { at: durMin + 20, k: 'After', text: ['Drifting down afterwards.', 'The hour after is where the hypos live. The app keeps it on the same chart.'] }
-    ];
-    notesEl.innerHTML = '';
-    var noteEls = notes.map(function (n) { var d = document.createElement('div'); d.className = 'peak__note'; var k = document.createElement('span'); k.className = 'gi-fine'; k.textContent = n.k; var b = document.createElement('b'); b.textContent = n.text[0]; var s = document.createElement('span'); s.textContent = n.text[1]; d.appendChild(k); d.appendChild(b); d.appendChild(s); notesEl.appendChild(d); return d; });
-
-    /* rail markers */
-    var marks = [{ id: 'before', label: 'Before', t: t0, left: '2.5%' }, { id: 'during', label: 'Race', t: 0 }, { id: 'after', label: 'After', t: durMin }, { id: 'next', label: 'Next run', t: t1, left: '96.5%' }];
-    var marksEl = $('railMarks'); marksEl.innerHTML = '';
-    var markEls = marks.map(function (m) {
-      var li = document.createElement('li'), b = document.createElement('button'); b.type = 'button'; b.className = 'rail__mark'; b.textContent = m.label;
-      b.setAttribute('aria-label', 'Go to ' + m.label); b.style.left = m.left || (x(m.t) / 10) + '%';
-      b.addEventListener('click', function () { $(m.id).scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }); });
-      li.appendChild(b); marksEl.appendChild(li); return b;
-    });
-
-    /* scroll → time */
-    var peakTop = 0, peakTravel = 1, docEnd = 1, vh = innerHeight, footEl = document.querySelector('.foot');
-    function measure() { vh = innerHeight; peakTop = peak.getBoundingClientRect().top + scrollY; peakTravel = Math.max(1, peak.offsetHeight - vh); docEnd = Math.max(1, document.documentElement.scrollHeight - vh); }
-    measure(); addEventListener('resize', measure); addEventListener('load', measure); setTimeout(measure, 800);
-
-    var lastV = null, lastNote = -1, lastStamp = -1, lastUp = null, lastDark = null;
-    function frame() {
-      var y = scrollY, pp = (y - peakTop) / peakTravel, t;
-      if (pp <= 0) t = t0 + (0 - t0) * Math.min(1, Math.max(0, y / Math.max(1, peakTop)));
-      else if (pp >= 1) t = durMin + (t1 - durMin) * Math.min(1, (y - peakTop - peakTravel) / Math.max(1, docEnd - peakTop - peakTravel));
-      else t = pp * durMin;
-      if (reduce) t = t1;
-      var g = glucoseAt(t), v = g[1], arrow = ARROW[g[2]] || '→', km = kmAt(t), hr = hrAt(t), xx = x(t);
-
-      rClipRect.setAttribute('width', xx.toFixed(1));
-      rHead.setAttribute('x1', xx.toFixed(1)); rHead.setAttribute('x2', xx.toFixed(1));
-      rDot.setAttribute('cx', xx.toFixed(1)); rDot.setAttribute('cy', rGy(v).toFixed(1));
-      var vs = v.toFixed(1);
-      if (vs !== lastV) { railV.textContent = vs; railA.textContent = arrow; pV.textContent = vs; pA.textContent = arrow; if (hV) { hV.textContent = vs; hA.textContent = arrow; } lastV = vs; }
-      railT.textContent = t < 0 ? fmtT(t) + ' to the gun' : t > durMin ? fmtT(t - durMin) + ' after the finish' : fmtT(t) + ' · ' + km.toFixed(1) + ' km';
-      railK.textContent = t < 0 ? 'Málaga Marathon · on the line' : t > durMin ? 'Málaga Marathon · finished' : (hr ? hr + ' bpm · ' : '') + 'Málaga Marathon';
-      if (hT) hT.textContent = t < 0 ? 'on the start line' : t > durMin ? 'after the finish' : km.toFixed(1) + ' km';
-
-      var cw = reduce ? 1000 : Math.max(0, xx);
-      clipRect.setAttribute('width', cw.toFixed(1));
-      head.setAttribute('x1', xx.toFixed(1)); head.setAttribute('x2', xx.toFixed(1));
-      dot.setAttribute('cx', xx.toFixed(1)); dot.setAttribute('cy', gy(v).toFixed(1));
-      pT.textContent = (t < 0 ? '−' : '') + fmtT(t); pK.textContent = km.toFixed(1) + ' km'; pH.textContent = hr ? hr + ' bpm' : '';
-      var rw = readout.offsetWidth, cwid = peakWrap.offsetWidth, px = 16 + xx / 1000 * (cwid - 32);
-      readout.style.transform = 'translate3d(' + Math.round(Math.min(cwid - rw - 16, Math.max(0, px - rw - 12))) + 'px, 0, 0)';
-      for (var i = 0; i < splitRects.length; i++) splitRects[i].classList.toggle('is-past', cum[i] <= t);
-      routeDrawn.style.strokeDashoffset = (1 - Math.min(1, Math.max(0, t / durMin))).toFixed(3);
-      var ni = -1; for (var j = 0; j < notes.length; j++) if (t >= notes[j].at) ni = j;
-      if (ni !== lastNote) { noteEls.forEach(function (n, k) { n.classList.toggle('is-on', k === ni); }); lastNote = ni; }
-
-      /* the rail stands up into the panel as the peak pins, and settles back */
-      if (!reduce) {
-        var rise = pp < 0.5 ? Math.min(1, Math.max(0, (pp + 0.06) / 0.14)) : Math.min(1, Math.max(0, (1.02 - pp) / 0.1));
-        var e = 1 - Math.pow(1 - rise, 3);
-        peakWrap.style.transform = 'scale(1, ' + (0.05 + 0.95 * e).toFixed(3) + ')';
-        peakWrap.style.opacity = (0.2 + 0.8 * e).toFixed(3);
-        readout.style.opacity = e.toFixed(3);
-        var up = pp > -0.02 && pp < 0.98;
-        if (up !== lastUp) { rail.classList.toggle('is-up', up); lastUp = up; }
-      }
-
-      var st = t >= t1 - 0.5 ? 3 : t >= durMin ? 2 : t >= 0 ? 1 : 0;
-      if (st !== lastStamp) { markEls.forEach(function (m, k) { m.classList.toggle('is-stamped', k <= st); }); lastStamp = st; }
-
-      /* the rail follows the ground under it: dark over the footer */
-      var dark = footEl.getBoundingClientRect().top < vh - 20;
-      if (dark !== lastDark) { rail.classList.toggle('is-dark', dark); lastDark = dark; }
-    }
-    var queued = false;
-    function onScroll() { if (!queued) { queued = true; requestAnimationFrame(function () { queued = false; frame(); }); } }
-    addEventListener('scroll', onScroll, { passive: true });
-    addEventListener('resize', onScroll);
-    frame();
-  }
-
-  /* --- the screens rail: items settle in sequence as the rail travels ---- */
-  var screensAct = document.getElementById('after');
-  var screens = Array.prototype.slice.call(document.querySelectorAll('#screensRail .screen'));
-  if (screensAct && screens.length && !reduce) {
-    var settle = function () {
-      var p = parseFloat(getComputedStyle(screensAct).getPropertyValue('--sc-p')) || 0;
-      screens.forEach(function (s, i) { s.classList.toggle('is-settled', p >= (i + 0.5) / (screens.length + 1.5)); });
-    };
-    addEventListener('scroll', function () { requestAnimationFrame(settle); }, { passive: true });
-    settle();
-  }
-})();
-</script>
+<script src="js/page.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
 </body>
 </html>

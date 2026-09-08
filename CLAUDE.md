@@ -9,6 +9,7 @@ The brand lives in the vault: `~/business-os/projects/glucose-insights/brand.md`
 - `index.html` — homepage, built with the scroll-craft engine (`scrollcraft.js`, `scrollcraft.css`, unmodified) plus page-local code. Data for the run trace in `assets/malaga.json`.
 - `blog.html`, `blog/` — articles
 - `support.html`, `privacy-policy.html`, `terms-conditions.html`
+- The secondary pages share `css/site.css` (tokens, the fixed bar, the footer). Their own layout CSS stays inline; the legacy `--slate`/`--sand`/`--accent` names are remapped there onto paper and ink.
 - Legacy Webflow pages (`about`, `log-in`, `sign-up`, `401`, `404`, etc.) are noindexed and untouched.
 
 ## Working on it

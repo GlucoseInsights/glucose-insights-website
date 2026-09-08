@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GlucoseInsights - Train Smarter with Type 1 Diabetes</title>
-<meta name="description" content="See exactly how exercise affects your glucose. Before, during, and after every workout. Built for Type 1 Diabetic athletes.">
-<meta property="og:title" content="GlucoseInsights - Train Smarter with Type 1 Diabetes">
-<meta property="og:description" content="See exactly how exercise affects your glucose. Before, during, and after every workout.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glucose Insights. Training with Type 1, with your glucose under it</title>
+<meta name="description" content="Glucose Insights lines up your CGM against every session, before, during and after, so athletes with Type 1 learn from their own data instead of guessing. Free on iOS and Android.">
+<meta property="og:title" content="Glucose Insights. Training with Type 1, with your glucose under it">
+<meta property="og:description" content="For athletes with Type 1 diabetes. Your CGM and pump, lined up against every session. Built by a Type 1 athlete.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://glucoseinsights.com/">
 <meta property="og:image" content="https://glucoseinsights.com/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GlucoseInsights - Train Smarter with Type 1 Diabetes">
-<meta name="twitter:description" content="See exactly how exercise affects your glucose. Before, during, and after every workout.">
+<meta name="twitter:title" content="Glucose Insights. Training with Type 1, with your glucose under it">
+<meta name="twitter:description" content="For athletes with Type 1 diabetes. Your CGM and pump, lined up against every session. Built by a Type 1 athlete.">
 <meta name="twitter:image" content="https://glucoseinsights.com/images/og-image.png">
 <link rel="canonical" href="https://glucoseinsights.com/">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -20,1493 +20,545 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWJ9NR8BTV"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EWJ9NR8BTV');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 [
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "GlucoseInsights",
-    "legalName": "Quantably LTD",
-    "url": "https://glucoseinsights.com",
-    "logo": "https://glucoseinsights.com/images/logo-full-white.png",
-    "description": "Empowering T1D athletes to train smarter with data-driven glucose insights.",
-    "email": "help@glucoseinsights.com",
-    "founder": {
-      "@type": "Person",
-      "name": "Peter",
-      "description": "3x GB age-group triathlete. 2:39 marathon PB. 30 years lived T1D experience.",
-      "jobTitle": "Founder"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "GlucoseInsights",
-    "url": "https://glucoseinsights.com"
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "GlucoseInsights",
-    "operatingSystem": "iOS, Android",
-    "applicationCategory": "HealthApplication",
-    "description": "See exactly how exercise affects your glucose. Before, during, and after every workout. Built for Type 1 Diabetic athletes.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "GBP"
-    },
-    "installUrl": "https://apps.apple.com/gb/app/glucoseinsights/id6447560916",
-    "screenshot": "https://glucoseinsights.com/images/og-image.png",
-    "author": {
-      "@type": "Organization",
-      "name": "Quantably LTD"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://glucoseinsights.com/"
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@type":"Organization","name":"GlucoseInsights","legalName":"Quantably LTD","url":"https://glucoseinsights.com","logo":"https://glucoseinsights.com/images/logo-full-white.png","description":"CGM analytics for athletes with Type 1 diabetes.","email":"help@glucoseinsights.com","founder":{"@type":"Person","name":"Peter"}},
+  {"@context":"https://schema.org","@type":"WebSite","name":"GlucoseInsights","url":"https://glucoseinsights.com"},
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"GlucoseInsights","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","description":"Keep the gels. Lose the guesswork. Your CGM and pump, lined up against every session. Built for athletes with Type 1 diabetes.","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"installUrl":"https://apps.apple.com/gb/app/glucoseinsights/id6447560916","screenshot":"https://glucoseinsights.com/images/og-image.png","author":{"@type":"Organization","name":"Quantably LTD"}},
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://glucoseinsights.com/"}]}
 ]
 </script>
+<link rel="stylesheet" href="scrollcraft.css">
 <style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-:root {
-  --slate-950: #0b1120;
-  --slate-900: #111b2e;
-  --slate-800: #162238;
-  --slate-700: #1e2d4a;
-  --slate-400: #708aa2;
-  --slate-300: #a0b4c8;
-  --sand-100: #f0f4f8;
-  --sand-200: #f0f4f8;
-  --sand-300: #c8d7eb;
-  --accent: #6ee7b7;
-  --accent-dim: #5cc4a0;
-  --white: #f0f4f8;
-  --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body: 'DM Sans', -apple-system, sans-serif;
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --container: 1200px;
-}
-
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: var(--font-body);
-  background: var(--slate-950);
-  color: var(--white);
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-.container {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 clamp(1.5rem, 4vw, 3rem);
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  padding: 1.25rem 0;
-  transition: background 0.4s, backdrop-filter 0.4s;
-  background: transparent;
-}
-
-nav.scrolled {
-  background: rgba(11, 17, 32, 0.85);
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-
-nav .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
-  color: var(--white);
-}
-
-.nav-logo img.nav-logo-full {
-  height: 68px;
-  width: auto;
-  display: block;
-}
-
-.nav-logo img.nav-logo-icon {
-  height: 40px;
-  width: auto;
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .nav-logo img.nav-logo-full { display: none; }
-  .nav-logo img.nav-logo-icon { display: block; }
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  list-style: none;
-}
-
-.nav-links a {
-  color: var(--slate-300);
-  text-decoration: none;
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  transition: color 0.2s;
-}
-
-.nav-links a:hover { color: var(--white); }
-
-.nav-cta-wrap {
-  position: relative;
-}
-
-.nav-cta {
-  background: var(--white) !important;
-  color: var(--slate-950) !important;
-  padding: 0.6rem 1.5rem;
-  border-radius: 100px;
-  font-weight: 600 !important;
-  font-size: 0.85rem !important;
-  transition: transform 0.2s var(--ease-out), box-shadow 0.2s;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.nav-cta:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(110, 231, 183, 0.25);
-}
-
-.nav-cta svg { width: 12px; height: 12px; transition: transform 0.2s; }
-.nav-cta-wrap:hover .nav-cta svg,
-.nav-cta-wrap.open .nav-cta svg { transform: rotate(180deg); }
-
-.nav-dropdown {
-  position: absolute;
-  top: calc(100% + 0.5rem);
-  right: 0;
-  background: var(--slate-900);
-  border: 1px solid var(--slate-700);
-  border-radius: 14px;
-  padding: 0.5rem;
-  min-width: 180px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-8px);
-  transition: opacity 0.2s, visibility 0.2s, transform 0.2s var(--ease-out);
-  box-shadow: 0 16px 48px rgba(0,0,0,0.4);
-  z-index: 110;
-}
-
-.nav-cta-wrap:hover .nav-dropdown,
-.nav-cta-wrap.open .nav-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.nav-dropdown a {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.6rem 0.75rem;
-  border-radius: 10px;
-  color: var(--white) !important;
-  font-size: 0.8rem !important;
-  font-weight: 500 !important;
-  background: transparent !important;
-  transition: background 0.15s;
-  text-decoration: none;
-}
-
-.nav-dropdown a:hover { background: var(--slate-800) !important; }
-
-.nav-dropdown svg { width: 20px; height: 20px; flex-shrink: 0; }
-
-.nav-dropdown span { display: flex; flex-direction: column; }
-.nav-dropdown .store-label { font-size: 0.7rem; color: var(--slate-400); font-weight: 400; }
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  padding: 8rem 0 6rem;
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background: url('images/herobg1_1.webp') center/cover no-repeat;
-  transform: scale(1) translateZ(0);
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.hero-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(11, 17, 32, 0.92) 0%, rgba(11, 17, 32, 0.75) 50%, rgba(11, 17, 32, 0.55) 100%);
-}
-
-.hero::before { display: none; }
-
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-}
-
-.hero-content { max-width: 640px; }
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(110, 231, 183, 0.1);
-  border: 1px solid rgba(110, 231, 183, 0.2);
-  color: var(--accent);
-  padding: 0.4rem 1rem;
-  border-radius: 100px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  animation: fadeUp 0.8s var(--ease-out) both;
-}
-
-.hero-badge::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
-
-.hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 5.5vw, 4.5rem);
-  font-weight: 400;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  margin-bottom: 1.5rem;
-  animation: fadeUp 0.8s 0.1s var(--ease-out) both;
-}
-
-.hero h1 em { font-style: italic; color: var(--accent); }
-
-.hero-sub {
-  font-size: 1.15rem;
-  line-height: 1.65;
-  color: var(--slate-300);
-  margin-bottom: 2.5rem;
-  max-width: 440px;
-  animation: fadeUp 0.8s 0.2s var(--ease-out) both;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  animation: fadeUp 0.8s 0.3s var(--ease-out) both;
-}
-
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--accent);
-  color: var(--slate-950);
-  padding: 0.9rem 2rem;
-  border-radius: 100px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: transform 0.25s var(--ease-out), box-shadow 0.25s;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(110, 231, 183, 0.3);
-}
-
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: transparent;
-  color: var(--white);
-  padding: 0.9rem 2rem;
-  border-radius: 100px;
-  font-weight: 500;
-  font-size: 0.95rem;
-  text-decoration: none;
-  border: 1px solid var(--slate-700);
-  transition: border-color 0.25s, background 0.25s;
-}
-
-.btn-secondary:hover {
-  border-color: var(--slate-400);
-  background: rgba(255,255,255,0.03);
-}
-
-.phone-mockup {
-  width: 280px;
-  height: 580px;
-  background: linear-gradient(145deg, #3a3a3a 0%, #222 30%, #1a1a1a 70%, #111 100%);
-  border-radius: 44px;
-  border: 1px solid rgba(255,255,255,0.12);
-  position: relative;
-  padding: 8px;
-  box-shadow:
-    0 40px 80px rgba(0,0,0,0.5),
-    inset 0 1px 0 rgba(255,255,255,0.15),
-    inset 0 -1px 0 rgba(0,0,0,0.3),
-    0 0 0 1px rgba(0,0,0,0.5);
-}
-
-/* Dynamic Island - hidden, use the one from screen recordings */
-.phone-mockup::before { display: none; }
-
-/* Side button (power) */
-.phone-mockup::after {
-  content: '';
-  position: absolute;
-  top: 130px;
-  right: -3px;
-  width: 4px;
-  height: 55px;
-  background: linear-gradient(180deg, #444, #2a2a2a, #444);
-  border-radius: 0 3px 3px 0;
-  z-index: 5;
-  box-shadow: 1px 0 2px rgba(0,0,0,0.3);
-}
-
-.phone-screen {
-  width: 100%;
-  height: 100%;
-  border-radius: 36px;
-  overflow: hidden;
-  background: linear-gradient(170deg, #1a1f2e 0%, #0f1219 100%);
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem 1.25rem 1.25rem;
-  position: relative;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.proof-bar {
-  border-top: 1px solid var(--slate-800);
-  border-bottom: 1px solid var(--slate-800);
-  padding: 2rem 0;
-  background: rgba(19, 23, 32, 0.5);
-}
-
-.proof-bar .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-
-.proof-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: var(--slate-400);
-  font-size: 0.85rem;
-}
-
-.proof-divider {
-  width: 1px;
-  height: 2rem;
-  background: var(--slate-700);
-}
-
-.features {
-  padding: 8rem 0;
-  background: var(--slate-950);
-  position: relative;
-}
-
-.section-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1.25rem;
-}
-
-.section-eyebrow::before {
-  content: '';
-  width: 24px;
-  height: 1px;
-  background: var(--accent);
-}
-
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.25rem, 4vw, 3.5rem);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: 1rem;
-}
-
-.section-title em { font-style: italic; color: var(--sand-200); }
-
-.section-desc {
-  color: var(--slate-300);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  max-width: 520px;
-}
-
-.features-header { margin-bottom: 4rem; }
-
-.features-phone { position: relative; }
-
-.features-phone .phone-mockup {
-  width: 280px;
-  height: 608px;
-}
-
-.feature-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0;
-  opacity: 0;
-  transition: opacity 0.5s var(--ease-out);
-}
-
-.feature-video.active { opacity: 1; }
-
-.feature-video-mobile { display: block; }
-.feature-video-desktop { display: none; }
-
-@media (min-width: 769px) {
-  .feature-video-mobile { display: none; }
-  .feature-video-desktop { display: block; }
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 1.25rem;
-  align-items: center;
-}
-
-.features-grid .features-phone-center {
-  grid-column: 2;
-  grid-row: 1 / 3;
-  display: flex;
-  justify-content: center;
-  padding: 0 2rem;
-}
-
-.features-left,
-.features-right {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.feature-card {
-  background: var(--slate-900);
-  border: 1px solid var(--slate-800);
-  border-radius: 20px;
-  padding: 2.5rem;
-  transition: border-color 0.6s var(--ease-out), box-shadow 0.6s var(--ease-out), transform 0.3s var(--ease-out), opacity 0.6s var(--ease-out);
-  position: relative;
-  overflow: hidden;
-  opacity: 0.4;
-}
-
-.feature-card.in-view {
-  border-color: var(--accent);
-  box-shadow: 0 0 30px rgba(110, 231, 183, 0.12), 0 0 60px rgba(110, 231, 183, 0.05), inset 0 1px 0 rgba(110, 231, 183, 0.15);
-  opacity: 1;
-}
-
-.feature-card.seen {
-  border-color: var(--slate-700);
-  box-shadow: none;
-  opacity: 0.85;
-}
-
-@media (hover: hover) {
-  .features-grid:hover .feature-card.in-view:not(:hover) {
-    border-color: var(--slate-700);
-    box-shadow: none;
-    opacity: 0.85;
+  /* ---------------------------------------------------------- brand ---- */
+  :root {
+    --sc-canvas:      #FBFAF7;
+    --sc-surface:     #FFFFFF;
+    --sc-ink:         #171614;
+    --sc-ink-soft:    #6E6A63;
+    --sc-accent:      #0D9A66;
+    --sc-accent-ink:  #FBFAF7;
+    --sc-font-display: "Geist", system-ui, -apple-system, sans-serif;
+    --sc-font-text:    "Geist", system-ui, -apple-system, sans-serif;
+    --sc-font-mono:    "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --sc-shadow-color: 23 22 20;
+    --sc-r-sm: 8px; --sc-r-md: 12px; --sc-r-lg: 20px;
+    --ink-3: #A8A49B;
+    --paper-2: #F4F2ED;
+    --high: #D97706; --low: #E5484D;
+    --mint: #5BE0A9;
+    --hair: rgba(23,22,20,.08); --hair-2: rgba(23,22,20,.14);
+    --z-bar: 60;
   }
+  html { scroll-behavior: smooth; }
+  body { background: var(--sc-canvas); color: var(--sc-ink); font-family: var(--sc-font-text); }
+  .sc-display { font-weight: 500; }
+  b, strong { font-weight: 600; }
+  ::selection { background: rgba(13,154,102,.18); }
 
-  .feature-card:hover {
-    border-color: var(--accent) !important;
-    transform: translateY(-2px);
-    opacity: 1 !important;
-    box-shadow: 0 0 30px rgba(110, 231, 183, 0.12), 0 0 60px rgba(110, 231, 183, 0.05);
+  /* grounds: painted per section, hard cuts, no drift */
+  .g-paper { background: var(--sc-canvas); --sc-ink: #171614; --sc-ink-soft: #6E6A63; color: var(--sc-ink); }
+  .g-ink   { background: #171614; --sc-canvas: #171614; --sc-surface: #221F1B; --sc-ink: #FBFAF7; --sc-ink-soft: #B8B2A8; --sc-accent: #5BE0A9; --hair: rgba(251,250,247,.10); --hair-2: rgba(251,250,247,.18); color: var(--sc-ink); }
+  .g-ink .sc-body { color: var(--sc-ink-soft); letter-spacing: .002em; line-height: 1.66; }
+
+  /* ------------------------------------------------------------ bar ---- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: var(--z-bar); height: 64px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding-inline: var(--sc-gutter); background: rgba(251,250,247,.86); backdrop-filter: saturate(1.2) blur(10px); -webkit-backdrop-filter: saturate(1.2) blur(10px); border-bottom: 1px solid var(--hair); color: #171614; }
+  .bar__mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; font-weight: 600; letter-spacing: -.01em; font-size: 15px; }
+  .bar__mark img { width: 22px; height: auto; display: block; }
+  .bar__links { display: flex; gap: 28px; justify-content: center; }
+  .bar__links a { color: #171614; text-decoration: none; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; font-weight: 500; opacity: .82; }
+  .bar__links a:hover { opacity: 1; }
+  .bar__cta { justify-self: end; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 8px; font: 500 15px/1 var(--sc-font-text); letter-spacing: -.005em; text-decoration: none; white-space: nowrap; transition: transform 140ms var(--sc-ease-out), background-color 140ms var(--sc-ease-out), color 140ms; cursor: pointer; border: 0; }
+  .btn:active { transform: translateY(1px) scale(.985); }
+  .btn--ink { background: #171614; color: #FBFAF7; }
+  .btn--ink:hover { background: #2B2925; }
+  .btn--paper { background: #FBFAF7; color: #171614; }
+  .btn--paper:hover { background: #fff; }
+  .btn--ghost { background: transparent; color: inherit; box-shadow: inset 0 0 0 1px var(--hair-2); }
+  .bar .btn { height: 38px; padding: 0 16px; font-size: 14px; }
+  :focus-visible { outline: 2px solid var(--sc-accent); outline-offset: 3px; }
+
+  /* ----------------------------------------------------------- hero ---- */
+  .hero { position: relative; }
+  .hero__video, .hero__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .hero__video { opacity: 0; transition: opacity 600ms var(--sc-ease-out); }
+  .hero__video.is-live { opacity: 1; }
+  .hero__mist { position: absolute; inset: auto 0 -40% 0; height: 100%; background: linear-gradient(to top, rgba(23,22,20,.62) 0%, rgba(23,22,20,.42) 45%, rgba(23,22,20,0) 100%); transform: translateY(calc(var(--sc-p, 0) * -16vh)); pointer-events: none; }
+  .hero__scrim { position: absolute; inset: -30% 0 -40% 0; background: linear-gradient(to right, rgba(23,22,20,.78) 0%, rgba(23,22,20,.7) 36%, rgba(23,22,20,.36) 54%, rgba(23,22,20,0) 68%); -webkit-mask-image: linear-gradient(to top, #000 66%, transparent 96%); mask-image: linear-gradient(to top, #000 66%, transparent 96%); pointer-events: none; transform: translateY(calc(var(--sc-p, 0) * -22vh)); }
+  .hero__lift { position: absolute; inset: 0; pointer-events: none; transform: translateY(calc(var(--sc-p, 0) * -22vh)); }
+  .hero__copy { position: absolute; left: var(--sc-gutter); bottom: clamp(3.5rem, 12vh, 8rem); max-width: min(38rem, 70vw); color: #FBFAF7; pointer-events: auto; }
+  .hero__copy .hero__eyebrow { margin: 0 0 14px; max-width: none; white-space: nowrap; font-family: var(--sc-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #FBFAF7; font-weight: 500; }
+  .hero__copy h1 { font-size: clamp(2.4rem, 1.4rem + 3.2vw, 4.2rem); line-height: 1.02; letter-spacing: -.03em; font-weight: 500; text-wrap: balance; margin: 0; }
+  .hero__copy p { margin: 18px 0 26px; font-size: clamp(1rem, .9rem + .5vw, 1.2rem); line-height: 1.5; max-width: 34ch; color: rgba(251,250,247,.9); }
+  .hero .hero__phone { position: absolute; right: clamp(2rem, 9vw, 12rem); bottom: -8vh; width: clamp(200px, 18vw, 290px); transform: translate3d(calc((var(--sc-mx, .5) - .5) * -22px), calc(var(--sc-p, 0) * -9vh + (var(--sc-my, .5) - .5) * -14px), 0); }
+  .hero__pause { position: absolute; left: var(--sc-gutter); bottom: 16px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(251,250,247,.5); background: rgba(23,22,20,.35); color: #FBFAF7; display: grid; place-items: center; cursor: pointer; padding: 0; }
+  .hero__pause svg { width: 12px; height: 12px; }
+  .hero__pause .i-play { display: none; }
+  .hero__pause[aria-pressed="true"] .i-play { display: block; }
+  .hero__pause[aria-pressed="true"] .i-pause { display: none; }
+
+  /* phone frame: real screens only */
+  .phone { position: relative; border-radius: clamp(22px, 3vw, 44px); background: #111; padding: clamp(4px, 0.62vw, 9px); box-shadow: 0 30px 60px -20px rgba(23,22,20,.55), 0 2px 0 rgba(255,255,255,.08) inset; }
+  .phone__screen { position: relative; width: 100%; aspect-ratio: 760 / 1648; border-radius: clamp(18px, 2.4vw, 36px); overflow: hidden; background: #FBFAF7; }
+  .phone__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .phone--soft { box-shadow: 0 40px 80px -30px rgba(23,22,20,.6); }
+
+  /* ----------------------------------------------------------- pain ---- */
+  .pain { padding-block: calc(var(--sc-section) * 1.1) var(--sc-section); }
+  .pain__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 7rem); align-items: center; }
+  .pain h2 { font-size: clamp(1.8rem, 1rem + 2.4vw, 3.2rem); letter-spacing: -.03em; line-height: 1.02; }
+  /* rotating noun: all words stack in one grid cell so the line never reflows; the live one sits, the next waits below, the last leaves above */
+  .rot { display: inline-grid; vertical-align: top; clip-path: inset(-.12em 0 -.16em 0); }
+  .rot__w { grid-area: 1 / 1; white-space: nowrap; opacity: 0; transform: translateY(130%); transition: transform .38s cubic-bezier(.22, 1, .36, 1), opacity .22s ease; will-change: transform; }
+  .rot__w.is-on { opacity: 1; transform: none; }
+  .rot__w.is-past { opacity: 0; transform: translateY(-130%); }
+  .pain__lines { display: grid; gap: 14px; }
+  .pain__lines p { font-size: clamp(1.05rem, .95rem + .5vw, 1.3rem); line-height: 1.45; color: var(--sc-ink); max-width: 30ch; margin: 0; }
+  .pain__lines p + p { padding-top: 14px; border-top: 1px solid var(--hair); }
+  .works { margin-top: calc(var(--sc-section) * .8); padding-top: 26px; border-top: 1px solid var(--hair); display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px 34px; align-items: center; }
+  .works__track { display: flex; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+  .works__track .works__list { flex: 0 0 auto; flex-wrap: nowrap; gap: 0; padding-right: 56px; animation: works-slide 32s linear infinite; }
+  .works__track .works__list li { padding-right: 56px; }
+  @keyframes works-slide { to { transform: translateX(-100%); } }
+  .works__track:hover .works__list { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .works__track .works__list { animation: none; } .works__track .works__list[aria-hidden] { display: none; } .works__track { -webkit-mask-image: none; mask-image: none; } .works__track .works__list { flex-wrap: wrap; row-gap: 10px; } }
+  .works__label { font-family: var(--sc-font-mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--sc-ink-soft); }
+  .works__list { display: flex; flex-wrap: wrap; gap: 8px 26px; margin: 0; padding: 0; list-style: none; }
+  @media (max-width: 960px) { .works { grid-template-columns: 1fr; } }
+  .works__list li { font-size: 15px; font-weight: 500; color: var(--sc-ink); display: inline-flex; align-items: center; gap: 8px; opacity: .78; }
+  .lg { display: inline-block; background: currentColor; -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+  .lg--dexcom { --m: url(assets/logos/dexcom.svg); width: 96px; height: 22px; }
+  .lg--strava { --m: url(assets/logos/strava.svg); width: 90px; height: 19px; }
+  .lg--ns { --m: url(assets/logos/nightscout.svg); width: 16px; height: 22px; }
+  .lg--ah { --m: url(assets/logos/apple-health.svg); width: 20px; height: 18px; }
+  .lg--glooko { --m: url(assets/logos/glooko.svg); width: 64px; height: 25px; }
+  .lg--tandem { --m: url(assets/logos/tandem.svg); width: 108px; height: 24px; }
+
+  /* ---------------------------------------------------------- walker ---- */
+  .walk { --p: var(--sc-p, 0); }
+  .walk__stage { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: center; gap: clamp(1rem, 4vw, 4rem); padding-inline: var(--sc-gutter); }
+  .walk__copy { align-self: center; position: relative; min-height: 14rem; }
+  .walk__copy h2 { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.6rem); letter-spacing: -.03em; line-height: 1.04; margin: 0 0 1.6rem; max-width: 14ch; }
+  .walk__step { position: absolute; left: 0; right: 0; top: calc(100% - 4rem); max-width: 30ch; margin: 0; font-size: clamp(1rem, .9rem + .5vw, 1.2rem); line-height: 1.5; color: var(--sc-ink-soft); }
+  .walk__step b { color: var(--sc-ink); font-weight: 500; display: block; margin-bottom: 4px; }
+  .walk__scene { position: relative; height: min(84svh, 800px); display: grid; place-items: center; }
+  .walk__phone { width: min(360px, 37svh); position: relative; }
+  .walk__phone .phone__screen img { transition: none; }
+  /* the screens: feed under, detail slides over, plan slides over that */
+  .scr--detail { transform: translateX(clamp(0%, calc((0.36 - var(--p)) * 800%), 100%)); }
+  .scr--plan   { transform: translateX(clamp(0%, calc((0.90 - var(--p)) * 900%), 100%)); }
+  .feed-shift  { transform: none; }
+  /* tap ring on the Lunch Run card */
+  .tap { position: absolute; left: 5%; width: 90%; top: 71%; height: 12.5%; border-radius: 14px; box-shadow: 0 0 0 2px var(--sc-accent), 0 0 0 6px rgba(91,224,169,.22); opacity: clamp(0, calc((var(--p) - .12) * 12), 1); transform: scale(calc(1 - clamp(0, (var(--p) - .26) * 10, 1) * .03)); pointer-events: none; }
+  .tap::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: rgba(91,224,169,.10); opacity: clamp(0, calc((var(--p) - .26) * 12), 1); }
+  /* callouts */
+  .co { position: absolute; width: min(240px, 26vw); font-size: 14px; line-height: 1.4; color: var(--sc-ink); --at: 0; --out: 2; --show: calc(clamp(0, (var(--p) - var(--at)) * 14, 1) * (1 - clamp(0, (var(--p) - var(--out)) * 14, 1))); opacity: var(--show); transform: translateY(calc((1 - var(--show)) * 10px)); }
+  .co b { display: block; font-weight: 500; margin-bottom: 2px; }
+  .co small { color: var(--sc-ink-soft); font-size: 13px; }
+  .co__line { position: absolute; background: var(--hair-2); }
+  .co__dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--sc-accent); box-shadow: 0 0 0 4px rgba(91,224,169,.2); }
+  .co--l { text-align: right; right: calc(50% + min(180px, 18.5svh) + 34px); }
+  .co--r { left: calc(50% + min(180px, 18.5svh) + 34px); }
+  .co--l .co__line { right: -34px; width: 30px; height: 1px; top: 12px; }
+  .co--r .co__line { left: -34px; width: 30px; height: 1px; top: 12px; }
+  .co--l .co__dot { right: -40px; top: 7px; }
+  .co--r .co__dot { left: -40px; top: 7px; }
+  .co--1 { --at: .40; --out: .86; top: 22%; }
+  .co--2 { --at: .52; --out: .86; top: 43%; }
+  .co--3 { --at: .66; --out: .86; top: 70%; }
+  .co--4 { --at: .93; top: 66%; }
+  .walk__steps p { --at: 0; }
+  .walk__note { position: absolute; left: var(--sc-gutter); bottom: 22px; font-size: 12px; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); letter-spacing: .04em; }
+
+  /* -------------------------------------------------------- marathon ---- */
+  .race { background: linear-gradient(180deg, #171614 0%, #211E1A 60%, #171614 100%); }
+  .race__head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: end; margin-bottom: 3rem; }
+  .race__head h2 { font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem); letter-spacing: -.03em; line-height: 1.02; max-width: 14ch; margin: 0; }
+  .race__stats { display: flex; gap: clamp(1.2rem, 3vw, 3rem); font-variant-numeric: tabular-nums; }
+  .race__stats div { display: grid; gap: 4px; }
+  .race__stats b { font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem); font-weight: 500; letter-spacing: -.02em; }
+  .race__stats span { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); }
+  .race__wrap { position: relative; height: clamp(360px, 52vh, 520px); }
+  .race__board { position: absolute; inset: 0; }
+  .race__labels { position: absolute; inset: 0; pointer-events: none; }
+  .race__chart { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .race__band { fill: rgba(91,224,169,.10); }
+  .race__gl { fill: none; stroke: var(--sc-accent); stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+  .race__hr { fill: none; stroke: rgba(229,72,77,.55); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+  .race__tick { stroke: rgba(251,250,247,.22); vector-effect: non-scaling-stroke; }
+  .race__tick--major { stroke: rgba(251,250,247,.45); }
+  .race__base { stroke: rgba(251,250,247,.35); vector-effect: non-scaling-stroke; }
+  .race__lbl { position: absolute; bottom: -26px; transform: translateX(-50%); font-family: var(--sc-font-mono); font-size: 11px; letter-spacing: .06em; color: var(--sc-ink-soft); }
+  .race__axis { position: absolute; left: -8px; transform: translate(-100%, -50%); font-family: var(--sc-font-mono); font-size: 11px; color: var(--sc-ink-soft); }
+  .card { position: absolute; width: 196px; padding: 16px 18px; border-radius: 8px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .card b { display: block; font-weight: 500; font-size: 17px; letter-spacing: -.01em; }
+  .card span { display: block; color: var(--sc-ink-soft); font-size: 14px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .card em { font-style: normal; color: var(--sc-accent); }
+  .card i { position: absolute; left: 12px; top: 100%; width: 1px; height: var(--h); background: rgba(251,250,247,.45); }
+  .card i::after { content: ""; position: absolute; left: -3.5px; bottom: -4px; width: 8px; height: 8px; border-radius: 50%; background: #FBFAF7; }
+  .race__note { margin-top: 3.4rem; font-size: 13px; color: var(--sc-ink-soft); max-width: 60ch; }
+  .race__note a { color: inherit; }
+
+  /* ------------------------------------------------------------- fan ---- */
+  .fan-sec h2 { font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem); letter-spacing: -.03em; line-height: 1.02; max-width: 16ch; margin: 0 0 1rem; }
+  .fan-sec .lede { max-width: 44ch; color: var(--sc-ink-soft); font-size: 1.1rem; line-height: 1.5; margin: 0; }
+  .fan { position: relative; height: clamp(420px, 60vh, 640px); margin-top: 3rem; overflow: visible; }
+  .fan__p { position: absolute; left: 50%; bottom: 0; width: clamp(150px, 15vw, 220px); border-radius: 30px; box-shadow: 0 30px 60px -24px rgba(23,22,20,.5); transform-origin: 50% 130%; transform: translateX(-50%) translateY(60px); opacity: 0; transition: transform 1s var(--sc-ease-out), opacity .7s var(--sc-ease-out); }
+  .fan__p img { width: 100%; height: auto; display: block; border-radius: inherit; }
+  .fan.sc-in .fan__p { opacity: 1; }
+  .fan.sc-in .fan__p[data-i="-2"] { transform: translateX(calc(-50% - 2 * clamp(120px, 12vw, 190px))) rotate(-12deg) translateY(72px); transition-delay: 180ms; }
+  .fan.sc-in .fan__p[data-i="-1"] { transform: translateX(calc(-50% - 1 * clamp(120px, 12vw, 190px))) rotate(-6deg) translateY(28px); transition-delay: 90ms; }
+  .fan.sc-in .fan__p[data-i="0"]  { transform: translateX(-50%) rotate(0deg) translateY(0); width: clamp(170px, 17vw, 250px); z-index: 2; }
+  .fan.sc-in .fan__p[data-i="1"]  { transform: translateX(calc(-50% + 1 * clamp(120px, 12vw, 190px))) rotate(6deg) translateY(28px); transition-delay: 90ms; }
+  .fan.sc-in .fan__p[data-i="2"]  { transform: translateX(calc(-50% + 2 * clamp(120px, 12vw, 190px))) rotate(12deg) translateY(72px); transition-delay: 180ms; }
+  .fan__p[data-i="0"] { width: clamp(170px, 17vw, 250px); z-index: 2; }
+  .facts { margin-top: clamp(6rem, 12vh, 9rem); border-top: 1px solid var(--hair); }
+  .facts div { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1rem; padding: 18px 0; border-bottom: 1px solid var(--hair); align-items: baseline; }
+  .chip { display: inline-block; font-family: var(--sc-font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; background: #171614; color: #FBFAF7; padding: 6px 10px; border-radius: 6px; }
+  .facts p { margin: 0; color: var(--sc-ink-soft); font-size: 15.5px; line-height: 1.5; max-width: 62ch; }
+
+  /* --------------------------------------------------------- founder ---- */
+  .founder { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .founder__photo { border-radius: 20px; overflow: hidden; aspect-ratio: 4 / 5; }
+  .founder__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; display: block; }
+  .founder h2 { font-size: clamp(2.2rem, 1.4rem + 3vw, 4rem); letter-spacing: -.03em; line-height: 1.02; margin: 0 0 1.2rem; max-width: 12ch; }
+  .founder p { color: var(--sc-ink-soft); font-size: 1.1rem; line-height: 1.55; max-width: 46ch; margin: 0; }
+  .founder__nums { display: flex; gap: clamp(1.5rem, 4vw, 3.5rem); margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--hair); font-variant-numeric: tabular-nums; }
+  .founder__nums div { display: grid; gap: 3px; }
+  .founder__nums b { font-size: clamp(1.5rem, 1rem + 1.6vw, 2.2rem); font-weight: 500; letter-spacing: -.02em; }
+  .founder__nums span { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sc-ink-soft); font-family: var(--sc-font-mono); }
+  .quote { max-width: 34rem; margin: calc(var(--sc-section) * .8) auto 0; padding-left: .9rem; display: grid; gap: 1.4rem; }
+  .quote blockquote { margin: 0; position: relative; font-size: clamp(1.25rem, 1rem + 1vw, 1.6rem); line-height: 1.38; letter-spacing: -.015em; font-weight: 500; }
+  .quote .qm { color: var(--ink-3); user-select: none; }
+  .quote .qm--open { position: absolute; left: -.9rem; }
+  .quote figcaption { display: flex; align-items: center; gap: .6rem; margin-left: auto; width: 60%; font-size: 14px; }
+  .quote figcaption i { flex: 1; height: 1px; background: var(--hair-2); }
+  .quote figcaption b { font-weight: 500; }
+  .quote figcaption span { color: var(--sc-ink-soft); }
+  .quote figcaption a { color: inherit; text-decoration: none; }
+
+  /* ----------------------------------------------------------- close ---- */
+  .close { padding-block: var(--sc-section) 0; }
+  .close__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+  .close h2 { font-size: clamp(2.4rem, 1.5rem + 3.4vw, 4.6rem); letter-spacing: -.03em; line-height: 1.02; margin: 0 0 1.8rem; max-width: 13ch; }
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; }
+  .store { display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 18px 0 14px; border-radius: 8px; background: #FBFAF7; color: #171614; text-decoration: none; transition: transform 140ms var(--sc-ease-out), background-color 140ms; }
+  .store:hover { background: #fff; }
+  .store:active { transform: translateY(1px); }
+  .store svg { width: 22px; height: 22px; }
+  .store small { display: block; font-size: 10px; letter-spacing: .04em; line-height: 1; opacity: .75; }
+  .store b { display: block; font-size: 16px; font-weight: 600; line-height: 1.1; letter-spacing: -.01em; }
+  .close__fine { margin-top: 1.2rem; font-size: 13px; color: var(--sc-ink-soft); }
+  .close__phone { width: min(300px, 70%); margin: 0 auto; transform: rotate(-4deg); }
+
+  /* ---------------------------------------------------------- footer ---- */
+  .foot { margin-top: var(--sc-section); border-top: 1px solid var(--hair); padding-block: 3.5rem 2.5rem; }
+  .foot__top { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 3rem 4rem; }
+  .foot__brand img { width: 26px; height: auto; display: block; }
+  .foot__sub h3 { font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem); font-weight: 500; letter-spacing: -.02em; margin: 1.4rem 0 1rem; max-width: 20ch; line-height: 1.15; }
+  .subscribe-form { display: flex; max-width: 26rem; border: 1px solid var(--hair-2); border-radius: 8px; overflow: hidden; }
+  .subscribe-form input { flex: 1; min-width: 0; background: transparent; border: 0; color: var(--sc-ink); padding: 0 14px; height: 46px; font: 15px var(--sc-font-text); }
+  .subscribe-form input::placeholder { color: var(--sc-ink-soft); }
+  .subscribe-form button { background: transparent; border: 0; border-left: 1px solid var(--hair-2); color: var(--sc-ink); padding: 0 16px; font: 500 14px var(--sc-font-text); cursor: pointer; }
+  .subscribe-form button:hover { background: rgba(251,250,247,.06); }
+  .foot__fine { font-size: 12.5px; color: var(--sc-ink-soft); margin: .8rem 0 0; }
+  .foot__groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem 1.5rem; }
+  .foot__groups h4 { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-family: var(--sc-font-mono); font-weight: 500; color: var(--sc-ink-soft); margin: 0 0 .9rem; }
+  .foot__groups ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .55rem; }
+  .foot__groups a { color: var(--sc-ink); text-decoration: none; font-size: 14.5px; }
+  .foot__groups a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .foot__legal { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--hair); display: flex; flex-wrap: wrap; gap: .6rem 2rem; font-size: 12.5px; color: var(--sc-ink-soft); }
+  .foot__legal a { color: inherit; }
+
+  /* ---------------------------------------------------------- mobile ---- */
+  @media (max-width: 960px) {
+    .bar__links { display: none; }
+    .bar { grid-template-columns: 1fr auto; }
+    .pain__grid, .founder, .close__grid, .foot__top { grid-template-columns: 1fr; }
+    .walk__stage { grid-template-columns: 1fr; align-content: start; padding-top: calc(64px + 28px + env(safe-area-inset-top, 0px)); gap: .9rem; }
+    .walk__copy { display: contents; }
+    .walk__copy h2 { font-size: clamp(1.6rem, 1.2rem + 2vw, 2.2rem); margin: 0; max-width: 20ch; order: 1; }
+    .walk__step { display: none; }
+    .walk__scene { order: 2; height: auto; padding: 0; }
+    .walk__phone { width: min(70vw, 44svh * 760 / 1648); }
+    .walk__stage { gap: .6rem; }
+    .walk .co-list { display: grid; order: 3; }
+    .co { display: none; }
+    .co-list { display: grid; }
+    .race__head { grid-template-columns: 1fr; }
+    .card { width: 150px; padding: 12px 12px; }
+    .card b { font-size: 15px; } .card span { font-size: 12.5px; }
+    .foot__groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .facts div { grid-template-columns: 1fr; gap: .5rem; }
   }
-}
-
-.feature-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(110, 231, 183, 0.5), transparent);
-  opacity: 0;
-  transition: opacity 0.6s var(--ease-out);
-}
-
-.feature-card.in-view::after { opacity: 1; }
-@media (hover: hover) { .feature-card:hover::after { opacity: 1; } }
-
-.feature-number {
-  font-family: var(--font-display);
-  font-size: 3.5rem;
-  color: var(--slate-800);
-  line-height: 1;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  transition: color 0.3s;
-}
-
-.feature-card.in-view .feature-number { color: rgba(110, 231, 183, 0.2); }
-@media (hover: hover) { .feature-card:hover .feature-number { color: rgba(110, 231, 183, 0.2); } }
-
-.feature-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.01em;
-}
-
-.feature-card p {
-  color: var(--slate-400);
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.feature-icons {
-  display: flex;
-  gap: 0.75rem;
-  margin-top: 1.25rem;
-}
-
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  background: var(--slate-800);
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--slate-700);
-  transition: transform 0.25s var(--ease-out);
-}
-
-.feature-icon svg { width: 20px; height: 20px; }
-.feature-icon:hover { transform: scale(1.2); }
-
-.showcase {
-  padding: 8rem 0;
-  background: var(--slate-900);
-  color: var(--white);
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid var(--slate-800);
-  border-bottom: 1px solid var(--slate-800);
-}
-
-.showcase::before {
-  content: '';
-  position: absolute;
-  top: -200px;
-  right: -200px;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(110, 231, 183, 0.06), transparent 70%);
-  pointer-events: none;
-}
-
-.showcase-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.showcase-phone {
-  display: flex;
-  justify-content: center;
-  perspective: 1000px;
-}
-
-.showcase-phone .phone-mockup {
-  transform: rotateY(-60deg) rotateX(15deg) scale(0.8);
-  transition: transform 0.1s linear;
-  transform-style: preserve-3d;
-}
-
-.showcase-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 2.5rem;
-}
-
-.step {
-  display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-}
-
-.step-num {
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  background: var(--slate-950);
-  color: var(--accent);
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.step h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 0.25rem;
-}
-
-.step p {
-  font-size: 0.85rem;
-  color: var(--slate-300);
-  line-height: 1.5;
-}
-
-.story {
-  padding: 8rem 0;
-  background: var(--slate-950);
-  position: relative;
-}
-
-.story-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 5rem;
-  align-items: center;
-}
-
-.story-image { position: relative; }
-
-.story-image-frame {
-  width: 100%;
-  aspect-ratio: 3/4;
-  background: var(--slate-800);
-  border-radius: 24px;
-  overflow: hidden;
-  position: relative;
-}
-
-.story-image-frame::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(11, 17, 32, 0.6), transparent 50%);
-}
-
-.story-image-placeholder {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.story-image-placeholder img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1.2s ease-in-out;
-}
-
-.story-image-placeholder img.active { opacity: 1; }
-
-.story-stats {
-  position: absolute;
-  bottom: -1.5rem;
-  left: 2rem;
-  right: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
-}
-
-.story-stat {
-  background: rgba(19, 23, 32, 0.9);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--slate-700);
-  border-radius: 14px;
-  padding: 1rem;
-  text-align: center;
-}
-
-.story-stat-value {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 0.15rem;
-}
-
-.story-stat-label {
-  font-size: 0.65rem;
-  color: var(--slate-400);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.story-content h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
-}
-
-.story-content h2 em { font-style: italic; color: var(--sand-200); }
-
-.story-content .story-text {
-  color: var(--slate-300);
-  font-size: 0.95rem;
-  line-height: 1.75;
-  margin-bottom: 1.5rem;
-}
-
-.story-content .story-text:last-of-type { margin-bottom: 2rem; }
-
-.story-sig {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.5rem;
-  color: var(--slate-400);
-}
-
-.testimonial {
-  padding: 6rem 0;
-  background: var(--slate-900);
-  border-top: 1px solid var(--slate-800);
-  border-bottom: 1px solid var(--slate-800);
-}
-
-.testimonial .container {
-  max-width: 800px;
-  text-align: center;
-}
-
-.testimonial blockquote {
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: -0.01em;
-  margin-bottom: 2rem;
-  font-style: italic;
-}
-
-.testimonial cite {
-  font-style: normal;
-  color: var(--slate-400);
-  font-size: 0.9rem;
-}
-
-.cta {
-  padding: 8rem 0;
-  background: var(--slate-950);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-video-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.cta-video-bg video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.cta-video-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(11, 17, 32, 0.75);
-}
-
-.cta .container { position: relative; }
-
-.cta h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 400;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
-}
-
-.cta h2 em { font-style: italic; color: var(--accent); }
-
-.cta p {
-  color: var(--slate-300);
-  font-size: 1.1rem;
-  max-width: 480px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.6;
-}
-
-.store-badges {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.store-badge {
-  height: 48px;
-  background: var(--slate-800);
-  border: 1px solid var(--slate-700);
-  border-radius: 10px;
-  padding: 0.5rem 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: border-color 0.2s;
-}
-
-.store-badge:hover { border-color: var(--slate-400); }
-.store-badge svg { width: 20px; height: 20px; }
-
-.store-badge-label {
-  font-size: 0.6rem;
-  color: var(--slate-400);
-  display: block;
-  line-height: 1;
-}
-
-.store-badge-name {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.subscribe-section {
-  padding: 4rem 0;
-  background: var(--slate-900);
-  border-top: 1px solid var(--slate-800);
-}
-
-.subscribe-layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.subscribe-text h3 {
-  font-family: var(--font-display);
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 0.35rem;
-  font-style: italic;
-}
-
-.subscribe-text p {
-  color: var(--slate-400);
-  font-size: 0.85rem;
-}
-
-.subscribe-form {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.subscribe-form input {
-  background: var(--slate-800);
-  border: 1px solid var(--slate-700);
-  color: var(--white);
-  padding: 0.85rem 1.25rem;
-  border-radius: 100px;
-  font-size: 0.9rem;
-  font-family: var(--font-body);
-  width: 280px;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.subscribe-form input:focus { border-color: var(--accent); }
-.subscribe-form input::placeholder { color: var(--slate-400); }
-
-.subscribe-form button {
-  background: var(--accent);
-  color: var(--slate-950);
-  border: none;
-  padding: 0.85rem 1.75rem;
-  border-radius: 100px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  font-family: var(--font-body);
-  transition: transform 0.2s var(--ease-out);
-}
-
-.subscribe-form button:hover { transform: translateY(-1px); }
-
-footer {
-  padding: 3rem 0 2rem;
-  background: var(--slate-950);
-  border-top: 1px solid var(--slate-800);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-
-.footer-brand p {
-  color: var(--slate-400);
-  font-size: 0.85rem;
-  line-height: 1.6;
-  margin-top: 1rem;
-  max-width: 280px;
-}
-
-.footer-col h4 {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--slate-400);
-  margin-bottom: 1rem;
-}
-
-.footer-col ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.footer-col a {
-  color: var(--slate-300);
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: color 0.2s;
-}
-
-.footer-col a:hover { color: var(--white); }
-
-.footer-bottom {
-  border-top: 1px solid var(--slate-800);
-  padding-top: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--slate-400);
-  font-size: 0.75rem;
-}
-
-@media (max-width: 768px) {
-  .hero .container,
-  .showcase-layout,
-  .story-layout,
-  .footer-grid { grid-template-columns: 1fr; }
-
-  .features-grid { grid-template-columns: 1fr; }
-
-  .features-grid .features-phone-center {
-    grid-column: 1;
-    grid-row: auto;
-    padding: 0;
-    order: -1;
-    justify-content: center;
+  @media (max-width: 960px) and (min-height: 780px) { .walk__phone { width: min(70vw, 52svh * 760 / 1648); } }
+  @media (max-width: 700px) {
+    .hero__copy { max-width: none; right: var(--sc-gutter); bottom: 40svh; }
+    .hero__lift { transform: translateY(calc(var(--sc-p, 0) * -12vh)); }
+    .hero__copy h1 { font-size: clamp(2rem, 1.4rem + 3.5vw, 2.6rem); }
+    .hero__copy p { margin: 12px 0 18px; font-size: 1rem; }
+    .hero .hero__phone { width: min(34vw, 30svh * 760 / 1648); right: 6vw; bottom: 3vh; }
+    .hero__scrim { inset: -10% 0 -40% 0; background: linear-gradient(to top, rgba(23,22,20,.8) 0%, rgba(23,22,20,.8) 34%, rgba(23,22,20,.76) 76%, rgba(23,22,20,.55) 90%, rgba(23,22,20,0) 100%); -webkit-mask-image: none; mask-image: none; }
+    .hero__mist { display: none; }
+    .co-list { gap: .35rem; }
+    .co-list li { font-size: 14px; line-height: 1.35; }
+    .walk .co-list { display: grid; }
+    .walk__note { display: none; }
+    .race__wrap { height: 240px; }
+    .race__stats { flex-wrap: wrap; gap: 1rem 1.6rem; }
+    .race__cards--stack { position: absolute; left: 0; right: 0; top: calc(100% + 44px); display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .race__cards--stack .card { position: static !important; width: auto; padding: 12px 14px; transform: none; }
+    .race__cards--stack .card i { display: none; }
+    .race__cards--stack .card { padding-left: 40px; position: relative !important; }
+    .card .card__n { position: absolute; left: 12px; top: 13px; width: 20px; height: 20px; margin: 0; border-radius: 50%; background: #5BE0A9; color: #171614; font: 600 11px/20px var(--sc-font-text); text-align: center; display: block; }
+    .race__pin { position: absolute; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; background: #5BE0A9; color: #171614; box-shadow: 0 0 0 2px #171614; font: 600 11px/20px var(--sc-font-text); text-align: center; }
+    .race__cards--stack .card b { font-size: 15px; } .race__cards--stack .card span { font-size: 12.5px; }
+    .race { padding-bottom: var(--sc-section); }
+    .race__note { margin-top: 262px; }
+    .fan { height: auto; margin-top: 2rem; }
+    .fan__p { display: none; }
+    .fan__p[data-i="0"], .fan.sc-in .fan__p[data-i="0"] { display: block; position: static; width: 56vw; margin: 0 auto; transform: none; }
+    .close__phone { width: 52vw; }
+    .quote figcaption { width: 100%; }
+    .founder__photo { aspect-ratio: 4 / 3; }
   }
+  .co-list { display: none; gap: .7rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+  .co-list li { --at: 0; --show: clamp(0, calc((var(--p) - var(--at)) * 14), 1); opacity: calc(.35 + .65 * var(--show)); font-size: 14px; color: var(--sc-ink-soft); padding-left: 16px; position: relative; }
+  .co-list li::before { content: ""; position: absolute; left: 0; top: .5em; width: 7px; height: 7px; border-radius: 50%; background: var(--sc-accent); opacity: var(--show); }
+  .co-list b { color: var(--sc-ink); font-weight: 500; }
 
-  .features-left, .features-right { gap: 1rem; }
-
-  .features-phone .phone-mockup { width: 200px; height: 434px; }
-  .feature-card { padding: 1.5rem; }
-  .feature-number { font-size: 2.5rem; margin-bottom: 1rem; }
-  .feature-icons { flex-wrap: wrap; }
-
-  .story-layout { gap: 2.5rem; }
-  .story-image-frame { aspect-ratio: 4/5; }
-  .story-stats { position: relative; left: 0; right: 0; bottom: 0; margin-top: 1rem; }
-  .story-stat { padding: 0.75rem 0.5rem; }
-  .story-stat-value { font-size: 1.1rem; }
-  .story-stat-label { font-size: 0.55rem; }
-  .story-content h2 { font-size: 1.75rem; }
-  .story-content .story-text { font-size: 0.875rem; }
-  .story { padding: 5rem 0; overflow: hidden; }
-
-  .proof-bar .container { flex-direction: column; gap: 0.75rem; }
-  .proof-divider { display: none; }
-  .proof-item { justify-content: center; }
-  .store-badges { flex-direction: column; align-items: center; }
-  .subscribe-layout { flex-direction: column; text-align: center; }
-  .subscribe-form { flex-direction: column; width: 100%; }
-  .subscribe-form input { width: 100%; }
-  .nav-links { display: none; }
-}
+  @media (prefers-reduced-motion: reduce) {
+    .rot__w { transition: none; }
+    .hero__video { display: none; }
+    .hero__lift, .hero .hero__phone, .hero__mist, .hero__scrim { position: absolute; inset: -30% 0 -40% 0; background: linear-gradient(to right, rgba(23,22,20,.78) 0%, rgba(23,22,20,.7) 36%, rgba(23,22,20,.36) 54%, rgba(23,22,20,0) 68%); -webkit-mask-image: linear-gradient(to top, #000 66%, transparent 96%); mask-image: linear-gradient(to top, #000 66%, transparent 96%); pointer-events: none; transform: translateY(calc(var(--sc-p, 0) * -22vh)); }
+    .scr--detail { transform: none; } .scr--plan { transform: translateX(100%); }
+    .feed-shift { transform: none; }
+    .co, .co-list li { opacity: 1 !important; transform: none !important; }
+    .tap { opacity: 1; transform: none; }
+    .fan__p, .fan.sc-in .fan__p { transition: opacity .3s; }
+  }
+  @media (hover: none), (pointer: coarse) { .hero .hero__phone { transform: translate3d(0, calc(var(--sc-p, 0) * -9vh), 0); } }
 </style>
 </head>
 <body>
 
-<nav id="nav">
-  <div class="container">
-    <a href="index.html" class="nav-logo">
-      <img src="images/logo-full-white.png" alt="GlucoseInsights" class="nav-logo-full">
-      <img src="images/logo-icon-white.png" alt="GlucoseInsights" class="nav-logo-icon">
-    </a>
-    <ul class="nav-links">
-      <li><a href="#features">The App</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li class="nav-cta-wrap">
-        <a class="nav-cta">Download Free <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></a>
-        <div class="nav-dropdown">
-          <a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-            <span><span class="store-label">Download on the</span>App Store</span>
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.gluchose" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.81L13.42 12 3.61 22.19c-.36-.28-.61-.74-.61-1.29V3.1c0-.55.25-1.01.61-1.29zM15.1 13.67l-2.31-2.31 2.31-2.31 3.22 1.87c.73.42.73 1.47 0 1.89l-3.22 1.86zM14.08 10.7L4.73.85l10.01 5.79-1.66 1.66.01.01-.01.01 1 .98zM4.73 23.15l9.35-9.85-1 .98.01.01-.01.01 1.66 1.66-10.01 5.79z"/></svg>
-            <span><span class="store-label">Get it on</span>Google Play</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+<span data-sc-progress></span>
 
-<section class="hero">
-  <div class="hero-bg" id="heroBg"></div>
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-badge">For Type 1 Athletes</div>
-      <h1>Train smarter <em>with</em> Type&nbsp;1</h1>
-      <p class="hero-sub">See exactly how exercise affects your glucose. Before, during, and after every workout.</p>
-      <div class="hero-actions">
-        <a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener" class="btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download Free
-        </a>
-        <a href="#features" class="btn-secondary">See how it works</a>
+<header class="bar">
+  <a class="bar__mark" href="/" aria-label="Glucose Insights home"><img src="assets/mark-ink.png" width="22" height="29" alt="">Glucose Insights</a>
+  <nav class="bar__links" aria-label="Site">
+    <a href="#features">How it works</a>
+    <a href="blog.html">Blog</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <div class="bar__cta"><a class="btn btn--ink" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a></div>
+</header>
+
+<main id="top">
+
+  <!-- 1 · RECOGNITION: pin, the road loop, phone plane, copy at its own rate -->
+  <section class="hero" data-sc-act="pin" data-sc-span="1.5" aria-label="Introduction">
+    <div data-sc-stage class="hero__stage" data-sc-spotlight>
+      <img class="hero__poster" src="assets/hero-poster-kling.webp" width="1920" height="1080" alt="A quiet country road at first light, mist in the valley.">
+      <video class="hero__video" muted loop playsinline preload="none" poster="assets/hero-poster-kling.webp" aria-hidden="true"
+             data-src="assets/hero-loop-kling.mp4" data-src-mobile="assets/hero-loop-kling-m.mp4"></video>
+      <div class="hero__mist" aria-hidden="true"></div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__phone phone phone--soft" aria-hidden="true"><div class="phone__screen"><img src="assets/screen-detail.webp" width="760" height="1648" alt=""></div></div>
+      <div class="hero__lift"><div class="hero__copy" data-sc-cue="0 0.86 0 0.4">
+        <p class="hero__eyebrow">For athletes with Type 1 diabetes</p>
+        <h1>Keep the gels.<br>Lose the guesswork.</h1>
+        <p>Turn trial and error into insights that are yours. Every session you've done, with your glucose and insulin under it, learned from over time. Free on iOS and Android.</p>
+        <a class="btn btn--paper" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Download free</a>
+      </div></div>
+      <button class="hero__pause" type="button" aria-pressed="false" aria-label="Pause background video">
+        <svg class="i-pause" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><rect x="2" y="1" width="3" height="10" rx="1"/><rect x="7" y="1" width="3" height="10" rx="1"/></svg>
+        <svg class="i-play" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M3 1.5v9l7-4.5z"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- 2 · UNEASE: flow, his words, no image -->
+  <section class="g-paper pain" data-sc-act="flow" aria-labelledby="pain-h">
+    <div class="sc-wrap">
+      <div class="pain__grid" data-sc-in data-sc-stagger="90">
+        <h2 id="pain-h" class="sc-display" aria-label="Same workout. Same time of day. Same fuelling strategy. Different outcome."><span aria-hidden="true">Same <span class="rot" data-rot><span class="rot__w is-on">workout.</span><span class="rot__w">time of day.</span><span class="rot__w">fuelling strategy.</span></span><br>Different outcome.</span></h2>
+        <div class="pain__lines">
+          <p>Your endo says exercise matters.</p>
+          <p>Nobody gives you the manual.</p>
+          <p>So it's trial and error, and a hypo when you get it wrong.</p>
+          <p>There has to be a better way.</p>
+        </div>
+      </div>
+      <div class="works" data-sc-in>
+        <span class="works__label">Works with</span>
+        <div class="works__track" aria-label="Works with Dexcom, Nightscout, Apple Health, Strava, Glooko and Tandem Diabetes Care"><ul class="works__list"><li><span class="lg lg--dexcom" role="img" aria-label="Dexcom"></span></li><li><span class="lg lg--ns" aria-hidden="true"></span>Nightscout</li><li><span class="lg lg--ah" aria-hidden="true"></span>Apple Health</li><li><span class="lg lg--strava" role="img" aria-label="Strava"></span></li><li><span class="lg lg--glooko" role="img" aria-label="Glooko"></span></li><li><span class="lg lg--tandem" role="img" aria-label="Tandem Diabetes Care"></span></li></ul><ul class="works__list" aria-hidden="true"><li><span class="lg lg--dexcom"></span></li><li><span class="lg lg--ns"></span>Nightscout</li><li><span class="lg lg--ah"></span>Apple Health</li><li><span class="lg lg--strava"></span></li><li><span class="lg lg--glooko"></span></li><li><span class="lg lg--tandem"></span></li></ul></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="proof-bar">
-  <div class="container">
-    <div class="proof-item">
-      <span>Used by <strong style="color: var(--white); font-weight: 700;">100+</strong> T1D athletes</span>
-    </div>
-    <div class="proof-divider"></div>
-    <div class="proof-item">
-      <span>Strava, Dexcom, Nightscout &amp; more</span>
-    </div>
-    <div class="proof-divider"></div>
-    <div class="proof-item">
-      <span>iOS &amp; Android</span>
-    </div>
-  </div>
-</div>
-
-<section class="features" id="features">
-  <div class="container">
-    <div class="features-header">
-      <div class="section-eyebrow">The App</div>
-      <h2 class="section-title">Your data, <em>decoded.</em></h2>
-      <p class="section-desc">No more app-switching. Everything you need to understand how exercise affects your glucose, in one place.</p>
-    </div>
-    <div class="features-grid">
-      <div class="features-left">
-        <div class="feature-card">
-          <div class="feature-number">01</div>
-          <h3>Spot Trends at a Glance</h3>
-          <p>See which workouts spike you and which don't. Overlay glucose on any activity to understand what happened before, during, and after.</p>
+  <!-- 3 · CLARITY (peak): pin, the app walks itself. Signature move. -->
+  <section id="features" class="g-ink walk" data-sc-act="pin" data-sc-span="3.4" aria-labelledby="walk-h">
+    <div data-sc-stage class="walk__stage">
+      <div class="walk__copy">
+        <h2 id="walk-h" class="sc-display">Every session, with the glucose under it.</h2>
+        <p class="walk__step" data-sc-cue="0 0.30 0"><b>Your sessions, as they happened.</b>Synced from Strava or Apple Health. Each one shows time in range and the glucose line before you open it.</p>
+        <p class="walk__step" data-sc-cue="0.30 0.52"><b>Open one.</b>The whole session, with the glucose before it and after it. Not just the workout window.</p>
+        <p class="walk__step" data-sc-cue="0.52 0.80"><b>The route, coloured by glucose.</b>Green in range, amber high, coral low. Heart rate alongside when you want it.</p>
+        <p class="walk__step" data-sc-cue="0.80"><b>Then plan the next one.</b>Set the activity, the duration and where your glucose is now. The app finds the sessions that looked like today.</p>
+        <ul class="co-list" aria-hidden="true">
+          <li style="--at:.12"><b>Lunch Run.</b> 67% in range.</li>
+          <li style="--at:.40"><b>Time in range</b> for the whole session.</li>
+          <li style="--at:.52"><b>The route,</b> coloured by glucose.</li>
+          <li style="--at:.66"><b>Glucose and heart rate,</b> by time or distance.</li>
+          <li style="--at:.93"><b>Find similar situations.</b></li>
+        </ul>
+      </div>
+      <div class="walk__scene">
+        <div class="walk__phone phone">
+          <div class="phone__screen">
+            <img class="feed-shift" src="assets/screen-activities.webp" width="760" height="1648" alt="Activities feed: evening, morning, afternoon and lunch runs, each with time in range and a glucose sparkline.">
+            <div class="tap" aria-hidden="true"></div>
+            <img class="scr--detail" src="assets/screen-detail.webp" width="760" height="1648" alt="Lunch Run: 67% time in range, 7:03 per mile, 155 bpm, 53:40, route map coloured by glucose, glucose chart.">
+            <img class="scr--plan" src="assets/screen-plan.webp" width="760" height="1648" alt="Plan Workout: current glucose, trend arrow, activity, planned duration, insulin on board, Find Similar Situations.">
+          </div>
         </div>
-        <div class="feature-card">
-          <div class="feature-number">02</div>
-          <h3>All Your Data, One Place</h3>
-          <p>Dexcom, Nightscout, Apple Health, Strava &amp; Tandem sync automatically. No manual entry.</p>
-          <div class="feature-icons">
-            <div class="feature-icon"><img src="images/dexcom.png" alt="Dexcom" style="width: 100%; height: 100%; border-radius: 8px;"></div>
-            <div class="feature-icon"><img src="images/nightscout.svg" alt="Nightscout" style="width: 22px; height: 22px;"></div>
-            <div class="feature-icon"><img src="images/apple-health-heart.svg" alt="Apple Health" style="width: 22px; height: 22px;"></div>
-            <div class="feature-icon"><img src="images/strava-svgrepo-com.svg" alt="Strava" style="width: 100%; height: 100%; border-radius: 8px;"></div>
-            <div class="feature-icon"><img src="images/tandem.png" alt="Tandem" style="width: 100%; height: 100%; border-radius: 8px;"></div>
+        <div class="co co--l co--1" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>67% in range</b><small>For the whole session, warm-up and recovery included.</small></div>
+        <div class="co co--r co--2" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>The route, coloured by glucose</b><small>Where it went high, where it held.</small></div>
+        <div class="co co--l co--3" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>Glucose against time or distance</b><small>Heart rate on the same axis.</small></div>
+        <div class="co co--r co--4" aria-hidden="true"><i class="co__line"></i><i class="co__dot"></i><b>Find similar situations</b><small>Plan from the sessions that started like this one.</small></div>
+      </div>
+      <p class="walk__note">Real screens, iOS 1.5. Not medical advice.</p>
+    </div>
+  </section>
+
+  <!-- 4 · TRUST: reveal, one real marathon -->
+  <section class="g-ink race sc-section" data-sc-act="flow" aria-labelledby="race-h">
+    <div class="sc-wrap">
+      <div class="race__head" data-sc-in data-sc-stagger="80">
+        <h2 id="race-h" class="sc-display">One real marathon, glucose included.</h2>
+        <div class="race__stats">
+          <div><b>2:48:12</b><span>Málaga, Dec 2025</span></div>
+          <div><b>162</b><span>Avg heart rate</span></div>
+          <div><b>93.9%</b><span>Time in range</span></div>
+        </div>
+      </div>
+      <div class="race__wrap" id="raceBoard">
+        <div class="race__board" data-sc-reveal="left" data-sc-reveal-at="0.12 0.62">
+          <svg class="race__chart" id="raceChart" viewBox="0 0 1000 400" preserveAspectRatio="none" role="img" aria-label="Glucose in mmol/L and heart rate across the marathon, from the gun to the finish."></svg>
+        </div>
+        <div id="raceLabels" class="race__labels" aria-hidden="true"></div>
+        <div id="raceCards" data-sc-in data-sc-stagger="140"></div>
+      </div>
+      <p class="race__note">Peter's own race, exported from the app. Glucose in mmol/L from his CGM, heart rate from his watch, shaded band is 3.9 to 10. His data is already public on the <a href="blog.html">blog</a>. Not medical advice.</p>
+    </div>
+  </section>
+
+  <!-- 5 · CONFIDENCE: flow, the screens fan out -->
+  <section class="g-paper fan-sec sc-section" data-sc-act="flow" aria-labelledby="fan-h">
+    <div class="sc-wrap">
+      <div data-sc-in data-sc-stagger="80">
+        <h2 id="fan-h" class="sc-display">What the app shows you.</h2>
+        <p class="lede">Five screens. Every number on them comes from your own devices.</p>
+      </div>
+      <div class="fan" data-sc-in aria-hidden="true">
+        <div class="fan__p" data-i="-2"><img src="assets/screen-insulin.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="-1"><img src="assets/screen-activities.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="0"><img src="assets/screen-detail.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="1"><img src="assets/screen-plan.webp" width="760" height="1648" alt=""></div>
+        <div class="fan__p" data-i="2"><img src="assets/screen-settings.webp" width="760" height="1648" alt=""></div>
+      </div>
+      <div class="facts" data-sc-in data-sc-stagger="70">
+        <div><span class="chip">Activities</span><p>Every session from Strava or Apple Health, with time in range and the glucose line on the card. Runs, rides, swims, walks, ski days.</p></div>
+        <div><span class="chip">Plan</span><p>Pick the activity and duration, set where your glucose is and which way it's heading. The app finds the sessions that matched and shows what happened.</p></div>
+        <div><span class="chip">Insulin</span><p>Daily totals from Glooko or your pump, basal and bolus split, insulin on board when you plan.</p></div>
+        <div><span class="chip">Connections</span><p>Dexcom, Nightscout, Apple Health, Strava, Glooko, Tandem t:slim. Connect once, then it's automatic.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · WARMTH: reveal + count, built by an athlete -->
+  <section class="g-paper sc-section" data-sc-act="flow" aria-labelledby="founder-h" style="padding-top: 0">
+    <div class="sc-wrap">
+      <div class="founder">
+        <figure class="founder__photo" data-sc-reveal="up" data-sc-reveal-at="0.10 0.55" style="margin:0">
+          <img src="assets/founder-marathon.webp" width="1800" height="1200" alt="Peter mid-race, arm raised, on a wet road.">
+        </figure>
+        <div data-sc-in data-sc-stagger="80">
+          <h2 id="founder-h" class="sc-display">Built by an athlete with Type 1.</h2>
+          <p>I've had Type 1 for thirty years. I run marathons and race triathlon for GB in my age group. I built Glucose Insights because I wanted to see my glucose against my training instead of guessing, and nothing did that. Every session I log makes the next one easier to plan.</p>
+          <div class="founder__nums">
+            <div><b><span data-sc-count="0 30" data-sc-count-ms="1400">0</span> years</b><span>With Type 1</span></div>
+            <div><b>2:39</b><span>Marathon</span></div>
+            <div><b>3×</b><span>GB age group</span></div>
           </div>
         </div>
       </div>
-      <div class="features-phone-center">
-        <div class="features-phone">
-          <div class="phone-mockup">
-            <div class="phone-screen" style="padding: 0;">
-              <video class="feature-video feature-video-mobile active" autoplay muted loop playsinline><source src="videos/feature-activity-feed.mp4" type="video/mp4"></video>
-              <video class="feature-video feature-video-desktop active" data-feature="0" autoplay muted loop playsinline><source src="videos/feature-activity-feed.mp4" type="video/mp4"></video>
-              <video class="feature-video feature-video-desktop" data-feature="1" muted loop playsinline><source src="videos/feature-settings.mp4" type="video/mp4"></video>
-              <video class="feature-video feature-video-desktop" data-feature="2" muted loop playsinline><source src="videos/feature-insights-routes.mp4" type="video/mp4"></video>
-              <video class="feature-video feature-video-desktop" data-feature="3" muted loop playsinline><source src="videos/feature-insulin.mp4" type="video/mp4"></video>
+      <figure class="quote" data-sc-in>
+        <blockquote><span class="qm qm--open" aria-hidden="true">“</span>It's a game-changer for my learning and improvement. The app offers a personal, at-a-glance overview of all the important metrics.<span class="qm" aria-hidden="true">”</span></blockquote>
+        <figcaption><i aria-hidden="true"></i><span><b><a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">Type 1 marathon runner</a></b>, App Store review</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7 · RESOLVE: flow, static, the close and the footer on the same ink -->
+  <section id="download" class="g-ink close" data-sc-act="flow" aria-labelledby="close-h">
+    <div class="sc-wrap">
+      <div class="close__grid" data-sc-in data-sc-stagger="90">
+        <div>
+          <h2 id="close-h" class="sc-display">Plan the next session from the ones that went right.</h2>
+          <div class="stores">
+            <a class="store" href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <div><small>Download on the</small><b>App Store</b></div>
+            </a>
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.gluchose" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 2.04L13.14 12 3.18 21.96C3.07 21.78 3 21.56 3 21.32V2.68C3 2.44 3.07 2.22 3.18 2.04zM16.81 9.19L5.07 2.38 14.28 11.14 16.81 9.19zM5.07 21.62L16.81 14.81 14.28 12.86 5.07 21.62zM19.89 11.12L17.58 9.76 14.8 12 17.58 14.24 19.89 12.88C20.49 12.52 20.49 11.48 19.89 11.12z"/></svg>
+              <div><small>Get it on</small><b>Google Play</b></div>
+            </a>
+          </div>
+          <p class="close__fine">Made for people with Type 1 diabetes who train. Free to download. Your data stays on your devices and your accounts.</p>
+        </div>
+        <div class="close__phone phone"><div class="phone__screen"><img src="assets/screen-similar.webp" width="760" height="1648" alt="Similar Situations: ten sessions that matched, each with time in range, insulin, the glucose line and the route."></div></div>
+      </div>
+
+      <footer class="foot">
+        <div class="foot__top">
+          <div class="foot__brand">
+            <img src="assets/mark-paper.png" width="26" height="34" alt="Glucose Insights">
+            <div class="foot__sub">
+              <h3>Notes on training with Type 1, occasionally.</h3>
+              <form class="subscribe-form" aria-label="Subscribe to updates" action="https://glucoseinsights.us22.list-manage.com/subscribe/post?u=b09e085a8d2f566b9138d4dc8&amp;id=d4c6ab5867" method="post" target="_blank">
+                <label for="subEmail" style="position:absolute;left:-999px">Email</label>
+                <input id="subEmail" type="email" name="EMAIL" placeholder="Email address" required autocomplete="email">
+                <button type="submit">Subscribe</button>
+              </form>
+              <p class="foot__fine">No spam. Unsubscribe any time. See the <a href="privacy-policy.html" style="color:inherit">privacy policy</a>.</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="features-right">
-        <div class="feature-card">
-          <div class="feature-number">03</div>
-          <h3>Compare Your Routes</h3>
-          <p>Run the same route regularly? See how your glucose responds each time and track your progress over repeated efforts.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-number">04</div>
-          <h3>Track Your Insulin</h3>
-          <p>Monitor total daily dose, sensitivity trends, and see how your insulin needs change over time.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="showcase">
-  <div class="container">
-    <div class="showcase-layout">
-      <div class="showcase-phone">
-        <div class="phone-mockup">
-          <div class="phone-screen" style="padding: 0;">
-            <img src="images/app-feed.png" style="width: 100%; height: 100%; object-fit: cover;" alt="GlucoseInsights activity feed">
+          <div class="foot__groups">
+            <div><h4>Product</h4><ul><li><a href="#features">How it works</a></li><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+            <div><h4>Get the app</h4><ul><li><a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.gluchose" target="_blank" rel="noopener">Google Play</a></li></ul></div>
+            <div><h4>Company</h4><ul><li><a href="mailto:help@glucoseinsights.com">Contact</a></li><li><a href="blog.html">Founder's notes</a></li></ul></div>
+            <div><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy</a></li><li><a href="terms-conditions.html">Terms</a></li></ul></div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="section-eyebrow">How it works</div>
-        <h2 class="section-title">From raw data <em>to clarity</em></h2>
-        <p class="section-desc">Three steps to understanding your glucose around exercise.</p>
-        <div class="showcase-steps">
-          <div class="step"><div class="step-num">1</div><div><h4>Connect your sources</h4><p>Link Strava, Apple Health, or Nightscout. Your data syncs automatically.</p></div></div>
-          <div class="step"><div class="step-num">2</div><div><h4>Train as normal</h4><p>The app captures glucose alongside every workout. No extra effort needed.</p></div></div>
-          <div class="step"><div class="step-num">3</div><div><h4>Discover your patterns</h4><p>Overlay glucose on activities, spot trends, and learn what works for you.</p></div></div>
+        <div class="foot__legal">
+          <span>© 2026 Quantably Ltd</span>
+          <span>Glucose Insights is made for people with Type 1 diabetes. It is not a medical device and does not give medical advice.</span>
         </div>
-      </div>
+      </footer>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="story" id="story">
-  <div class="container">
-    <div class="story-layout">
-      <div class="story-image">
-        <div class="story-image-frame">
-          <div class="story-image-placeholder">
-            <img src="images/run10_1.webp" alt="Peter lunging on track" class="active">
-            <img src="images/run14-1_1.webp" alt="Peter with CGM">
-          </div>
-        </div>
-        <div class="story-stats">
-          <div class="story-stat"><div class="story-stat-value">2:39</div><div class="story-stat-label">Marathon PB</div></div>
-          <div class="story-stat"><div class="story-stat-value">30yr</div><div class="story-stat-label">Lived T1D Experience</div></div>
-          <div class="story-stat"><div class="story-stat-value">3x</div><div class="story-stat-label">GB Age-Group Triathlete</div></div>
-        </div>
-      </div>
-      <div class="story-content">
-        <div class="section-eyebrow">The founder</div>
-        <h2>Built by an athlete <em>who gets it</em></h2>
-        <p class="story-text">I've lived with Type 1 Diabetes for over 30 years. We're told that exercise is absolutely critical for managing this condition but there's no instruction manual. For most of us, it's pure trial and error. What makes it harder is that it's a deeply personal condition, and what affects one person doesn't always translate to another, making it hard to learn from anyone but yourself.</p>
-        <p class="story-text">But over time, patterns emerge. A data-driven approach lets you see those patterns faster, iterate quicker, and stop guessing. That's why I built GlucoseInsights. Whether you're lacing up for your first 5K or your 10th ultramarathon, our tools can help you get there.</p>
-        <div class="story-sig">&mdash; Peter</div>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
-<section class="testimonial">
-  <div class="container">
-    <blockquote>&ldquo;It's a game-changer for my learning and improvement. The app offers a personal, at-a-glance overview of all the important metrics.&rdquo;</blockquote>
-    <cite>T1D Marathon Runner</cite>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="cta-video-bg">
-    <video autoplay muted loop playsinline><source src="videos/run-bg.mp4" type="video/mp4"></video>
-  </div>
-  <div class="container">
-    <h2>Start training <em>smarter</em></h2>
-    <p>Free to download. See your glucose patterns from your very first workout.</p>
-    <div class="store-badges">
-      <a href="https://apps.apple.com/gb/app/glucoseinsights/id6447560916" target="_blank" rel="noopener" class="store-badge">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-        <div><span class="store-badge-label">Download on the</span><span class="store-badge-name">App Store</span></div>
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.gluchose" target="_blank" rel="noopener" class="store-badge">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 2.04L13.14 12 3.18 21.96C3.07 21.78 3 21.56 3 21.32V2.68C3 2.44 3.07 2.22 3.18 2.04zM16.81 9.19L5.07 2.38 14.28 11.14 16.81 9.19zM5.07 21.62L16.81 14.81 14.28 12.86 5.07 21.62zM19.89 11.12L17.58 9.76 14.8 12 17.58 14.24 19.89 12.88C20.44 12.56 20.44 11.44 19.89 11.12z"/></svg>
-        <div><span class="store-badge-label">Get it on</span><span class="store-badge-name">Google Play</span></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<div class="subscribe-section">
-  <div class="container">
-    <div class="subscribe-layout">
-      <div class="subscribe-text">
-        <h3>Stay in the loop</h3>
-        <p>New features, T1D exercise insights, and community updates.</p>
-      </div>
-      <form class="subscribe-form">
-        <input type="email" placeholder="your@email.com" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo" style="margin-bottom: 0.5rem; display: inline-flex;">
-          <img src="images/logo-icon-white.png" alt="GlucoseInsights" style="height: 48px;">
-        </a>
-        <p>Empowering T1D athletes to train smarter with data-driven glucose insights.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="#features">The App</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-conditions.html">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Glucose Insights. All rights reserved.</span>
-      <span>Built for athletes with T1D</span>
-    </div>
-  </div>
-</footer>
-
-<script>
-// Nav scroll effect
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 50);
-});
-
-(function() {
-  var imgs = document.querySelectorAll('.story-image-placeholder img');
-  if (imgs.length < 2) return;
-  var current = 0;
-  setInterval(function() {
-    imgs[current].classList.remove('active');
-    current = (current + 1) % imgs.length;
-    imgs[current].classList.add('active');
-  }, 4000);
-})();
-
-(function() {
-  var heroBg = document.getElementById('heroBg');
-  if (!heroBg) return;
-  var ticking = false;
-  window.addEventListener('scroll', function() {
-    if (!ticking) {
-      requestAnimationFrame(function() {
-        var scale = 1 + window.scrollY * 0.0003;
-        heroBg.style.transform = 'scale(' + Math.min(scale, 1.15) + ') translateZ(0)';
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
-})();
-
-(function() {
-  var section = document.querySelector('.features');
-  var leftCards = section.querySelectorAll('.features-left .feature-card');
-  var rightCards = section.querySelectorAll('.features-right .feature-card');
-  var cards = [];
-  leftCards.forEach(function(c) { cards.push(c); });
-  rightCards.forEach(function(c) { cards.push(c); });
-  if (!section || !cards[0]) return;
-  var currentIndex = -1;
-  var videos = document.querySelectorAll('.feature-video-desktop');
-  var hoverIndex = -1;
-  function setActiveVideo(index) {
-    videos.forEach(function(v, i) {
-      if (i === index) { v.classList.add('active'); v.play().catch(function(){}); }
-      else { v.classList.remove('active'); v.pause(); }
-    });
-  }
-  if (window.matchMedia('(hover: hover)').matches) {
-    cards.forEach(function(card, i) {
-      card.addEventListener('mouseenter', function() { hoverIndex = i; setActiveVideo(i); });
-      card.addEventListener('mouseleave', function() { hoverIndex = -1; if (currentIndex >= 0) setActiveVideo(currentIndex); });
-    });
-  }
-  var isMobile = window.matchMedia('(max-width: 768px)').matches;
-  if (isMobile) {
-    /* Mobile: highlight each card when it enters the viewport */
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var i = cards.indexOf(entry.target);
-        if (entry.isIntersecting) {
-          currentIndex = i;
-          cards.forEach(function(card, j) {
-            card.classList.remove('in-view', 'seen');
-            if (j === i) card.classList.add('in-view');
-            else if (j < i) card.classList.add('seen');
-          });
-        }
-      });
-    }, { threshold: 0.5 });
-    cards.forEach(function(card) { observer.observe(card); });
-  } else {
-    /* Desktop: section-progress based highlighting */
-    function update() {
-      var rect = section.getBoundingClientRect();
-      var windowH = window.innerHeight;
-      var progress = (windowH - rect.top) / (windowH + rect.height);
-      progress = Math.max(0, Math.min(1, progress));
-      var index = Math.floor(progress * 4.5) - 1;
-      index = Math.max(-1, Math.min(3, index));
-      if (index !== currentIndex) {
-        currentIndex = index;
-        cards.forEach(function(card, i) {
-          card.classList.remove('in-view', 'seen');
-          if (i === index) card.classList.add('in-view');
-          else if (i < index) card.classList.add('seen');
-        });
-        if (hoverIndex === -1 && index >= 0) setActiveVideo(index);
-      }
-    }
-    window.addEventListener('scroll', update, { passive: true });
-    update();
-  }
-})();
-
-(function() {
-  var showcase = document.querySelector('.showcase');
-  var phone = showcase.querySelector('.showcase-phone .phone-mockup');
-  if (!showcase || !phone) return;
-  var startRotateY = -60, startRotateX = 15, startScale = 0.8;
-  function updatePhoneTilt() {
-    var rect = showcase.getBoundingClientRect();
-    var windowH = window.innerHeight;
-    var progress = Math.min(Math.max((windowH - rect.top) / (windowH + rect.height * 0.4), 0), 1);
-    var eased = 1 - Math.pow(1 - progress, 3);
-    var rotateY = startRotateY * (1 - eased);
-    var rotateX = startRotateX * (1 - eased);
-    var scale = startScale + (1 - startScale) * eased;
-    phone.style.transform = 'rotateY(' + rotateY + 'deg) rotateX(' + rotateX + 'deg) scale(' + scale + ')';
-  }
-  window.addEventListener('scroll', updatePhoneTilt, { passive: true });
-  updatePhoneTilt();
-})();
-
-/* Autoplay videos when they scroll into view (mobile Safari fix) */
-(function() {
-  var allVideos = document.querySelectorAll('video[autoplay]');
-  if (!allVideos.length || !('IntersectionObserver' in window)) return;
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.play().catch(function(){});
-      }
-    });
-  }, { threshold: 0.25 });
-  allVideos.forEach(function(v) { observer.observe(v); });
-})();
-</script>
-<script src="js/subscribe.js"></script>
+<script src="scrollcraft.js"></script>
+<script src="js/subscribe.js" defer></script>
+<script src="js/page.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
 </body>
 </html>
